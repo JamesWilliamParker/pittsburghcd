@@ -20,32 +20,27 @@ import Footer from "./Footer";
 import logoV1 from "../assets/pcd_logo_v1.png";
 
 const NavBar = () => {
-  // This is behind the scenes
-  // "isopen" is a value, and "setisopen" is a function that changes the value.
-  // "usestate" is a way for react to respond to changes of the "isopen" value.
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
-  // This is visible on screen - after the "return ("
   return (
     <>
       <Navbar expand="lg" className="app-nav">
-        {/* <div className="left-nav"> */}
         <NavbarBrand href="/">
           <img
             src={logoV1}
             className="nav-logo"
             alt="Pittsburgh Doors & Closets Logo"
+            style={{ width: "220px", height: "auto" }}
           />
         </NavbarBrand>
-        {/* </div> */}
 
         <NavbarToggler onClick={toggle} />
 
         <Collapse isOpen={isOpen} navbar className="right-nav">
           <Nav className="me-auto" navbar>
-            <NavItem>
+            <NavItem style={{ marginLeft: "20px", marginRight: "20px" }}>
               <NavLink href="/about">Why Choose Us</NavLink>
             </NavItem>
 
@@ -84,19 +79,38 @@ const NavBar = () => {
               </DropdownMenu>
             </UncontrolledDropdown>
 
-            <NavItem>
+            <NavItem style={{ marginLeft: "20px", marginRight: "1px" }}>
               <NavLink href="/gallery">Gallery</NavLink>
             </NavItem>
 
-            <NavItem>
+            <NavItem style={{ marginLeft: "20px", marginRight: "5px" }}>
               <NavLink href="/blog">Blog</NavLink>
             </NavItem>
 
-            {/* <NavItem> */}
-            <Button color="primary">
-              <NavLink href="/consultation">Free Design Consultation</NavLink>
+            <NavbarText
+              className="phone-number"
+              style={{
+                marginRight: "30px",
+                marginLeft: "20px",
+                fontSize: "1.5rem",
+              }}
+            >
+              Call (724) 201-6421
+            </NavbarText>
+
+            {/* Free Consultion Button */}
+
+            <Button
+              style={{
+                backgroundColor: "#179d97",
+                color: "white",
+                padding: "1px 1px",
+              }}
+            >
+              <NavLink style={{ color: "white" }} href="/consultation">
+                Free Design Consultation
+              </NavLink>
             </Button>
-            {/* </NavItem> */}
           </Nav>
         </Collapse>
       </Navbar>

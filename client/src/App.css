@@ -2,11 +2,13 @@
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-
   text-align: center;
 }
+/* Nav. Bar */
+.navbar-nav .nav-link {
+  font-size: 1.5rem; /* Adjust the size as needed */
+}
 
-/* This is where you design the logo on nav bar */
 .nav-logo {
   height: 3.5rem;
 }
@@ -44,12 +46,62 @@
 
 .carousel-caption h3 {
   font-weight: 600;
-  font-size: 4vw;
-  text-shadow: 0.2rem 0.3rem 0.5rem rgb(0,0,0);
+  font-size: 2vw;
+  text-shadow: 0.2rem 0.1rem 0.5rem rgb(0, 0, 0);
 }
 
 .carousel-caption p {
-  font-size: 1.8vw;
-  text-shadow: 0.2rem 0.3rem 0.5rem rgb(0,0,0);
+  font-size: 1.2vw;
+  text-shadow: 0.2rem 0.1rem 0.5rem rgb(0, 0, 0);
 }
 
+/* Card container for ReviewCard component */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Styles for individual cards */
+.card {
+  width: 30%;
+  padding: 20px;
+  border: 10px solid #9f6f81;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* The Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 270px;
+  margin-top: 100px;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+  line-height: 1.5; /* Adjust line height here */
+}
+
+.footer-column:last-child {
+  margin-right: 0;
+  line-height: 1.5;
+}
+
+.footer-header {
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+.footer-content {
+  margin-top: 10px; /* Add space between */
+}
+
+/* Drop Down Nav Bar Hover Color */
+
+.dropdown-item:hover {
+  background-color: #4de7df; /* Change this to the desired hover color */
+  color: #212529; /* Change this to the desired text color */
+}
