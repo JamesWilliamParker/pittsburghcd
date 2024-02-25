@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Closets from "./pages/Closets";
+import Consultation from "./pages/Consultation";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="closets" element={<Closets />} />
-
+          <Route path="/consultation" element={<Consultation />} />
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}

@@ -26,7 +26,11 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="app-nav">
+      <Navbar
+        expand="lg"
+        className="app-nav"
+        style={{ borderBottom: "1px solid #ccc" }}
+      >
         <NavbarBrand href="/">
           <img
             src={logoV1}

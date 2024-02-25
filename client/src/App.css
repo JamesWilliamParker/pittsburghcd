@@ -9,6 +9,7 @@
   font-size: 1.5rem; /* Adjust the size as needed */
 }
 
+
 .nav-logo {
   height: 3.5rem;
 }
@@ -62,7 +63,7 @@
   margin-top: 20px; /* Add margin for spacing */
 }
 
-/* Styles for individual cards */
+/* Styles for individual ReviewCards */
 .card {
   width: 30%;
   padding: 20px;
@@ -102,6 +103,66 @@
 /* Drop Down Nav Bar Hover Color */
 
 .dropdown-item:hover {
-  background-color: #4de7df; /* Change this to the desired hover color */
+  background-color: #9f6f81; /* Change this to the desired hover color */
   color: #212529; /* Change this to the desired text color */
+}
+
+/* Banner Component */
+.banner {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin-top: 160px; /* Add margin to the top */
+  height: 200px; /* Adjust the height as needed */
+}
+
+.banner-text {
+  font-size: 1.2rem; /* Adjust the size as needed */
+  color: #ffffff; /* Change this to the desired text color */
+}
+
+/* Styles for ServiceCard component */
+
+.service-card {
+  display: flex;
+  margin-right: 60px;
+  margin-top: 160px;
+  margin-bottom: 160px; /* Add margin-bottom to create space */
+}
+
+.service-image {
+  margin-left: 350px;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px 0 0 10px;
+}
+
+.service-content {
+  margin-left: 150px;
+    padding: 2rem;
+}
+
+.service-header {
+  margin-top: 200px;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  color: #555555;
+}
+
+.service-button {
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #179d97;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* This is the free consultation button for the ServiceCard*/
+.service-button:hover {
+    background-color: #9f6f81;
 }
