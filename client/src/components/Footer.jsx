@@ -17,7 +17,7 @@ const Footer = () => {
             1916 Babcock Blvd., Pittsburgh, PA 15209
           </p>
           <p style={{ marginBottom: "10px", fontSize: "18px" }}>
-            Phone Number: 724-302-9514
+            Office: 724-302-9514
           </p>
           <p style={{ marginBottom: "10px", fontSize: "18px" }}>
             Showroom: 724-209-4680
