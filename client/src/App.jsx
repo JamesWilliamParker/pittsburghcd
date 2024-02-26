@@ -7,6 +7,13 @@ import About from "./pages/About";
 import Closets from "./pages/Closets";
 import Consultation from "./pages/Consultation";
 import Gallery from "./pages/Gallery";
+import Doors from "./pages/Doors";
+import Entryway from "./pages/Entryway";
+import Garage from "./pages/Garage";
+import Living from "./pages/Living";
+import Storage from "./pages/Storage";
+import Workspace from "./pages/Workspace";
+
 
 function App() {
   return (
@@ -21,6 +28,13 @@ function App() {
           <Route path="closets" element={<Closets />} />
           <Route path="consultation" element={<Consultation />} />
           <Route path="gallery" element={<Gallery />} />
+          <Route path="doors" element={<Doors />} />
+          <Route path="entry" element={<Entryway />} />
+          <Route path="garage" element={<Garage />} />
+          <Route path="living" element={<Living />} />
+          <Route path="storage" element={<Storage />} />
+          <Route path="workspace" element={<Workspace />} />
+
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
