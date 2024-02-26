@@ -6,6 +6,6 @@
 ## In pittsburgh do npm run dev
 ## In cd client do npm run dev
 
-## Making own branch
+## Make your own branch:
 
 On the terminal type the following `git checkout -b namelastname` this will create a branch and check it out so you can make changes independantly
