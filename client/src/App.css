@@ -6,7 +6,7 @@
 }
 /* Nav. Bar */
 .navbar-nav .nav-link {
-  font-size: 1.5rem; /* Adjust the size as needed */
+  font-size: 1.2rem; /* Adjust the size as needed */
 }
 
 .nav-logo {
@@ -164,4 +164,10 @@
 /* This is the free consultation button for the ServiceCard*/
 .service-button:hover {
   background-color: #9f6f81;
+}
+
+/* Carousel_Gallery Design Logic */
+.carousel-gallery {
+  max-width: 1800px;
+  margin: auto;
 }

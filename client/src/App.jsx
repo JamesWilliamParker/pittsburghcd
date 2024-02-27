@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Why from "./pages/Why";
 import Closets from "./pages/Closets";
 import Consultation from "./pages/Consultation";
 import Gallery from "./pages/Gallery";
@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="why" element={<Why />} />
           <Route path="closets" element={<Closets />} />
           <Route path="consultation" element={<Consultation />} />
           <Route path="gallery" element={<Gallery />} />

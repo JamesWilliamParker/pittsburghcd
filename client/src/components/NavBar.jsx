@@ -45,7 +45,7 @@ const NavBar = () => {
         <Collapse isOpen={isOpen} navbar className="right-nav">
           <Nav className="me-auto" navbar>
             <NavItem style={{ marginLeft: "20px", marginRight: "20px" }}>
-              <NavLink href="/about">Why Choose Us</NavLink>
+              <NavLink href="/why">Why Choose Us</NavLink>
             </NavItem>
 
             <UncontrolledDropdown nav inNavbar>
@@ -96,7 +96,7 @@ const NavBar = () => {
               style={{
                 marginRight: "30px",
                 marginLeft: "20px",
-                fontSize: "1.5rem",
+                fontSize: "1.2rem",
               }}
             >
               Call (724) 201-6421

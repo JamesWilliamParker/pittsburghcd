@@ -1,0 +1,19 @@
+/* Styles for ServiceVideoCard component */
+
+.service-video-card {
+  display: flex;
+  margin-top: 160px;
+  margin-bottom: 160px; /* Add margin-bottom to create space */
+  margin-right: 160px;
+}
+
+.service-content {
+  flex: 1; /* Take up remaining space */
+  padding: 2rem;
+}
+
+.service-video {
+  width: 50%; /* Video takes up half the width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+}
