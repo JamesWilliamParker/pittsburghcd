@@ -13,6 +13,7 @@ import Garage from "./pages/Garage";
 import Living from "./pages/Living";
 import Storage from "./pages/Storage";
 import Workspace from "./pages/Workspace";
+import Privacy from "./pages/Privacy";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="living" element={<Living />} />
           <Route path="storage" element={<Storage />} />
           <Route path="workspace" element={<Workspace />} />
+          <Route path="privacy-policy" element={<Privacy />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
