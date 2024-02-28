@@ -38,7 +38,8 @@
   justify-content: flex-end;
 }
 
-/* Carousel Images on Homepage */
+/* Carousel Homepage but also changes Carousel-Gallery */
+/* DON'T TOUCH */
 .carousel-image {
   width: 100%;
   height: auto;
@@ -47,12 +48,15 @@
 .carousel-caption h3 {
   font-weight: 600;
   font-size: 2vw;
-  text-shadow: 0.2rem 0.1rem 0.5rem rgb(0, 0, 0);
+  text-shadow: 0.1rem 0.3rem 0.2rem rgb(0, 0, 0);
+  color: #4de7df; /* Change the font color of the header */
 }
 
 .carousel-caption p {
   font-size: 1.2vw;
   text-shadow: 0.2rem 0.1rem 0.5rem rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  color: #fff; /* Change the font color of the caption */
 }
 
 /* Card container for ReviewCard component */
