@@ -6,7 +6,7 @@ import "../pages/ServiceVideoCard.css"; // Import the CSS file for the component
 const ServiceVideoCard = ({ videoId, header, description }) => {
   return (
     <div className="service-video-card">
-      <div className="service-content">
+      <div className="service-video-content">
         <h3 className="service-header">{header}</h3>
         <p className="service-description">{description}</p>
         <Link
@@ -17,7 +17,7 @@ const ServiceVideoCard = ({ videoId, header, description }) => {
           Free Design Consultation
         </Link>
       </div>
-      <YouTube videoId={"0Huazog37Qs"} />
+      <YouTube videoId={"0Huazog37Qs"} className="service-video" />
     </div>
   );
 };
