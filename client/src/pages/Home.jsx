@@ -27,7 +27,7 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <div style={{ background: "#f2f2f2", minHeight: "100vh" }}>
       <Carousel />
       <div className="card-container" style={{ marginTop: "170px" }}>
         {cardsData.map((data, index) => (
@@ -42,8 +42,11 @@ const Home = () => {
           marginTop: "170px",
           marginBottom: "90px", // Add margin to the bottom of the button
           fontSize: "30px",
+          transition: "background-color 0.3s", // Smooth transition
         }}
         href="/consultation"
+        onMouseOver={(e) => (e.target.style.backgroundColor = "#9f6f81")}
+        onMouseOut={(e) => (e.target.style.backgroundColor = "#179d97")}
       >
         Free Design Consultation
       </Button>

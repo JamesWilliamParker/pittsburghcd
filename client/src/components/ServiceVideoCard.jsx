@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import YouTube from "react-youtube";
-import "../pages/ServiceVideoCard.css"; // Import the CSS file for the component
 
 const ServiceVideoCard = ({ videoId, header, description }) => {
   return (
@@ -17,7 +16,9 @@ const ServiceVideoCard = ({ videoId, header, description }) => {
           Free Design Consultation
         </Link>
       </div>
-      <YouTube videoId={"0Huazog37Qs"} className="service-video" />
+      <div className="rounded-video-container">
+        <YouTube videoId={"0Huazog37Qs"} className="service-video" />
+      </div>
     </div>
   );
 };

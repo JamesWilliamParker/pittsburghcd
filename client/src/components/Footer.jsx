@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       className="footer"
-      style={{ borderTop: "1px solid #ccc", paddingTop: "20px" }}
+      style={{ borderTop: "1px solid #ccc", paddingTop: "50px" }}
     >
       <div className="footer-column">
         <img src={logo} alt="Logo" style={{ width: "15%", height: "auto" }} />
