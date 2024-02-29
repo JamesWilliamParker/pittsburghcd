@@ -207,3 +207,30 @@
   margin: auto;
 }
 
+/* Whycard component */
+
+/* App.css */
+.why-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.why-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.why-header {
+  margin-right: 20px;  /* Adjust the margin as needed */
+}
+
+.why-line {
+  width: 100%;  /* Line extends the full width of the container */
+  height: 2px;   /* Adjust the height of the line as needed */
+  background-color: #000;  /* Adjust the color of the line as needed */
+  margin-top: 5px;  /* Adjust the top margin to create space between header and line */
+}
+
+
+
