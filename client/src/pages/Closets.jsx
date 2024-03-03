@@ -3,8 +3,8 @@ import Banner from "../components/Banner";
 import ServiceCard from "../components/ServiceCard";
 
 // Import your images
-import image1 from "../assets/test_reach-in_closet.jpg";
-import image2 from "../assets/test_reach-in_closet.jpg";
+import service_image_1 from "../assets/service_image_1.jpg";
+import service_image_2 from "../assets/service_image_2.jpg";
 
 const Closets = () => {
   return (
@@ -17,7 +17,7 @@ const Closets = () => {
       />
       <div>
         <ServiceCard
-          image={image1}
+          image={service_image_1}
           header="Reach-In Closet"
           description="Custom-built reach-in closets designed to maximize space and style."
         />
@@ -30,7 +30,7 @@ const Closets = () => {
         />
 
         <ServiceCard
-          image={image2}
+          image={service_image_2}
           header="Walk-In Closet"
           description="Organize your clothes and accessories efficiently with our personalized solutions."
         />

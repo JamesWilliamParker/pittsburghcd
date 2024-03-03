@@ -3,8 +3,9 @@ import Banner from "../components/Banner";
 import ServiceCard from "../components/ServiceCard";
 
 // Import your images
-import doorImage1 from "../assets/test_reach-in_closet.jpg";
-import doorImage2 from "../assets/test_reach-in_closet.jpg";
+import service_image_3 from "../assets/service_image_3.jpg";
+import service_image_4 from "../assets/service_image_4.jpg";
+import service_image_5 from "../assets/service_image_5.jpg";
 
 const Doors = () => {
   return (
@@ -17,9 +18,9 @@ const Doors = () => {
       />
       <div>
         <ServiceCard
-          image={doorImage1}
-          header="Front Doors"
-          description="Make a grand entrance with our stylish front door options."
+          image={service_image_3}
+          header="Interior Doors"
+          description="Amazing what great looking, quality doors can do to a home."
         />
 
         <Banner
@@ -30,9 +31,15 @@ const Doors = () => {
         />
 
         <ServiceCard
-          image={doorImage2}
-          header="Interior Doors"
-          description="Enhance the aesthetic appeal of your interiors with our diverse range of interior doors."
+          image={service_image_4}
+          header="Exterior Doors"
+          description="Styles & price points for every home makeover."
+        />
+
+        <ServiceCard
+          image={service_image_5}
+          header="Closet Doors"
+          description="Fabulous style for every door in the home."
         />
       </div>
     </div>

@@ -3,8 +3,8 @@ import Banner from "../components/Banner";
 import ServiceCard from "../components/ServiceCard";
 
 // Import your images
-import entrywayImage1 from "../assets/test_reach-in_closet.jpg";
-import entrywayImage2 from "../assets/test_reach-in_closet.jpg";
+import service_image_6 from "../assets/service_image_6.jpg";
+
 
 const Entryway = () => {
   return (
@@ -17,9 +17,9 @@ const Entryway = () => {
       />
       <div>
         <ServiceCard
-          image={entrywayImage1}
-          header="Entryway Furniture"
-          description="Discover functional and beautiful furniture pieces to organize your entryway."
+          image={service_image_6}
+          header="Mudroom"
+          description="Great combinations of style & storage."
         />
 
         <Banner
@@ -29,11 +29,7 @@ const Entryway = () => {
           backgroundColor="#9f6f81"
         />
 
-        <ServiceCard
-          image={entrywayImage2}
-          header="Decor Accents"
-          description="Add personality to your entryway with our collection of decor accents."
-        />
+        
       </div>
     </div>
   );
