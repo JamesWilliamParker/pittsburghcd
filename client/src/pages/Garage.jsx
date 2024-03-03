@@ -3,8 +3,7 @@ import Banner from "../components/Banner";
 import ServiceCard from "../components/ServiceCard";
 
 // Import your images
-import garageImage1 from "../assets/test_reach-in_closet.jpg";
-import garageImage2 from "../assets/test_reach-in_closet.jpg";
+import service_image_7 from "../assets/service_image_7.jpg";
 
 const GarageStorage = () => {
   return (
@@ -17,9 +16,9 @@ const GarageStorage = () => {
       />
       <div>
         <ServiceCard
-          image={garageImage1}
-          header="Wall-Mounted Storage"
-          description="Utilize vertical space in your garage with our wall-mounted storage systems."
+          image={service_image_7}
+          header="Garage"
+          description="Various options for some of your most valued items."
         />
 
         <Banner
@@ -27,12 +26,6 @@ const GarageStorage = () => {
           width="100%"
           height="55px"
           backgroundColor="#9f6f81"
-        />
-
-        <ServiceCard
-          image={garageImage2}
-          header="Tool Cabinets"
-          description="Store your tools securely and access them easily with our range of tool cabinets."
         />
       </div>
     </div>

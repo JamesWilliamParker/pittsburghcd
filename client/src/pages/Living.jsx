@@ -3,8 +3,8 @@ import Banner from "../components/Banner";
 import ServiceCard from "../components/ServiceCard";
 
 // Import your images
-import livingSpaceImage1 from "../assets/test_reach-in_closet.jpg";
-import livingSpaceImage2 from "../assets/test_reach-in_closet.jpg";
+import service_image_8 from "../assets/service_image_8.jpg";
+import service_image_9 from "../assets/service_image_9.jpg";
 
 const LivingSpaces = () => {
   return (
@@ -17,9 +17,9 @@ const LivingSpaces = () => {
       />
       <div>
         <ServiceCard
-          image={livingSpaceImage1}
-          header="Sofas & Sectionals"
-          description="Find the perfect sofa or sectional to anchor your living room in comfort and style."
+          image={service_image_8}
+          header="Built-Ins"
+          description="Making your living area ALIVE!"
         />
 
         <Banner
@@ -30,9 +30,9 @@ const LivingSpaces = () => {
         />
 
         <ServiceCard
-          image={livingSpaceImage2}
-          header="Home Decor"
-          description="Discover unique decor pieces to add personality and charm to your living area."
+          image={service_image_9}
+          header="Entertainment Centers"
+          description="Bringing style and function to your home's entertainment spaces."
         />
       </div>
     </div>

@@ -3,8 +3,9 @@ import Banner from "../components/Banner";
 import ServiceCard from "../components/ServiceCard";
 
 // Import your images
-import storageImage1 from "../assets/test_reach-in_closet.jpg";
-import storageImage2 from "../assets/test_reach-in_closet.jpg";
+import service_image_10 from "../assets/service_image_10.jpg";
+import service_image_11 from "../assets/service_image_11.jpg";
+import service_image_12 from "../assets/service_image_12.jpg";
 
 const StorageSolutions = () => {
   return (
@@ -17,9 +18,9 @@ const StorageSolutions = () => {
       />
       <div>
         <ServiceCard
-          image={storageImage1}
-          header="Closet Organizers"
-          description="Maximize your closet space with our range of customizable organizers."
+          image={service_image_10}
+          header="Laundry Area"
+          description="Whites, colors, delicates……So many options!"
         />
 
         <Banner
@@ -30,9 +31,15 @@ const StorageSolutions = () => {
         />
 
         <ServiceCard
-          image={storageImage2}
-          header="Storage Bins & Boxes"
-          description="Keep your belongings organized and easily accessible with our selection of bins and boxes."
+          image={service_image_11}
+          header="Pantry"
+          description="Find what you need, in style!"
+        />
+
+        <ServiceCard
+          image={service_image_12}
+          header="Murphy Beds"
+          description="Guests will love their stay!"
         />
       </div>
     </div>
