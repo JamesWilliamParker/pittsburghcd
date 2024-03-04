@@ -1,9 +1,6 @@
-const Banner = ({ text, width, height, backgroundColor }) => {
+const Banner = ({ text, width, backgroundColor }) => {
   return (
-    <div
-      className="banner"
-      style={{ width: width, height: height, backgroundColor: backgroundColor }}
-    >
+    <div className="banner" style={{ width: width, backgroundColor: backgroundColor }}>
       <div className="banner-text">{text}</div>
     </div>
   );
