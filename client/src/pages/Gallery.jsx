@@ -1,4 +1,3 @@
-import React from 'react';
 import ServiceVideoCard from '../components/ServiceVideoCard';
 import BulletCard from '../components/BulletCard';
 import Carousel_Gallery from '../components/Carousel_Gallery';

@@ -1,25 +1,13 @@
-import React from "react";
-
-const BulletCard = ({
-  leftHeader,
-  centerHeader,
-  rightHeader,
-  fontSize,
-  color,
-  marginLeft,
-  marginRight,
-  marginTop,
-  lineColor,
-}) => {
+const BulletCard = ({ leftHeader, centerHeader, rightHeader, fontSize, color, marginLeft, marginRight, marginTop, lineColor }) => {
   const cardStyle = {
-    display: "flex",
-    justifyContent: "space-between",
+    display: 'flex',
+    justifyContent: 'space-between',
     marginLeft: marginLeft,
     marginRight: marginRight,
     marginTop: marginTop,
-    position: "relative",
-    listStyleType: "none", // Remove default list styles
-    paddingLeft: "0", // Remove default left padding for list items
+    position: 'relative',
+    listStyleType: 'none', // Remove default list styles
+    paddingLeft: '0', // Remove default left padding for list items
   };
 
   const headerStyle = {
@@ -28,27 +16,27 @@ const BulletCard = ({
   };
 
   const lineStyleTop = {
-    position: "absolute",
-    top: "-50px", // Adjust position of line above
-    left: "0",
-    width: "100%",
-    borderTop: "15px solid " + lineColor, // Style of line above thickness
+    position: 'absolute',
+    top: '-50px', // Adjust position of line above
+    left: '0',
+    width: '100%',
+    borderTop: '15px solid ' + lineColor, // Style of line above thickness
   };
 
   const lineStyleBottom = {
-    position: "absolute",
-    bottom: "-50px", // Adjust position of line below
-    left: "0",
-    width: "100%",
-    borderTop: "15px solid " + lineColor, // Style of line below thickness
+    position: 'absolute',
+    bottom: '-50px', // Adjust position of line below
+    left: '0',
+    width: '100%',
+    borderTop: '15px solid ' + lineColor, // Style of line below thickness
   };
 
   const bulletStyle = {
-    paddingRight: "10px", // Adjust spacing between bullet and text
+    paddingRight: '10px', // Adjust spacing between bullet and text
   };
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: 'relative' }}>
       <div style={lineStyleTop}></div>
       <ul style={cardStyle}>
         <li style={headerStyle}>

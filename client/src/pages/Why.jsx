@@ -1,5 +1,4 @@
 // why.jsx
-import React from 'react';
 import WhyCard from '../components/WhyCard'; // Adjust the path accordingly
 import { Link } from 'react-router-dom';
 import WhyImage1 from '../assets/test_reach-in_closet.jpg';

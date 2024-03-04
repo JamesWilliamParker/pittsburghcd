@@ -1,4 +1,3 @@
-import React from 'react';
 import Carousel from '../components/Carousel';
 import ReviewCard from '../components/ReviewCard';
 import { Button } from 'reactstrap';

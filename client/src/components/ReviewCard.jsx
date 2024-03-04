@@ -1,7 +1,4 @@
-// ReviewCard.js
-import React from "react";
 import starFilled from '../assets/star-filled.png';
-
 
 const ReviewCard = ({ authorName, rating, feedback }) => {
   return (
@@ -12,7 +9,7 @@ const ReviewCard = ({ authorName, rating, feedback }) => {
           <img key={index} src={starFilled} alt="filled star" />
         ))}
       </div>
-      <p style={{ fontSize: "19px", textAlign: "left" }}>{feedback}</p>
+      <p style={{ fontSize: '19px', textAlign: 'left' }}>{feedback}</p>
     </div>
   );
 };
