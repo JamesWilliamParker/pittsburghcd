@@ -1,39 +1,20 @@
-import React from "react";
-import Banner from "../components/Banner";
-import ServiceCard from "../components/ServiceCard";
+import Banner from '../components/Banner';
+import ServiceCard from '../components/ServiceCard';
 
 // Import your images
-import service_image_13 from "../assets/service_image_13.jpg";
-import service_image_14 from "../assets/service_image_14.jpg";
+import service_image_13 from '../assets/service_image_13.jpg';
+import service_image_14 from '../assets/service_image_14.jpg';
 
 const StorageSolutions = () => {
   return (
     <div>
-      <Banner
-        text="Discover smart storage solutions to declutter your space and simplify your life."
-        width="100%"
-        height="55px"
-        backgroundColor="#9f6f81"
-      />
+      <Banner text="Discover smart storage solutions to declutter your space and simplify your life." width="100%" height="55px" backgroundColor="#9f6f81" />
       <div>
-        <ServiceCard
-          image={service_image_13}
-          header="Home Office"
-          description="Make working from home even better!"
-        />
+        <ServiceCard image={service_image_13} header="Home Office" description="Make working from home even better!" />
 
-        <Banner
-          text="From pantry to garage, we have storage solutions for every area of your home."
-          width="100%"
-          height="55px"
-          backgroundColor="#9f6f81"
-        />
+        <Banner text="From pantry to garage, we have storage solutions for every area of your home." width="100%" height="55px" backgroundColor="#9f6f81" />
 
-        <ServiceCard
-          image={service_image_14}
-          header="Craft Rooms"
-          description="Organized craft & play areas are the best areas!"
-        />
+        <ServiceCard image={service_image_14} header="Craft Rooms" description="Organized craft & play areas are the best areas!" />
       </div>
     </div>
   );

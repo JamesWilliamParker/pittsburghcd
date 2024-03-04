@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import YouTube from "react-youtube";
+import { Link } from 'react-router-dom';
+import YouTube from 'react-youtube';
+import { Button } from 'reactstrap';
 
 const ServiceVideoCard = ({ videoId, header, description }) => {
   return (
@@ -8,16 +8,22 @@ const ServiceVideoCard = ({ videoId, header, description }) => {
       <div className="service-video-content">
         <h3 className="service-header">{header}</h3>
         <p className="service-description">{description}</p>
-        <Link
-          to="/consultation"
+        <Button
           className="service-button"
-          style={{ textDecoration: "none" }}
+          style={{
+            backgroundColor: '#179d97',
+            color: 'white',
+            padding: '10px',
+          }}
+          size="lg"
         >
-          Free Design Consultation
-        </Link>
+          <Link to="/consultation" style={{ textDecoration: 'none', color: 'white' }}>
+            Free Design Consultation
+          </Link>
+        </Button>
       </div>
       <div className="rounded-video-container">
-        <YouTube videoId={"0Huazog37Qs"} className="service-video" />
+        <YouTube videoId={'0Huazog37Qs'} className="service-video" />
       </div>
     </div>
   );

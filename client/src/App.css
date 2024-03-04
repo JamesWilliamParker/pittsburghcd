@@ -47,13 +47,13 @@
 
 .carousel-caption h3 {
   font-weight: 600;
-  font-size: 2vw;
+  font-size: 2rem;
   text-shadow: 0.1rem 0.3rem 0.2rem rgb(0, 0, 0);
   color: #4de7df; /* Change the font color of the header */
 }
 
 .carousel-caption p {
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   text-shadow: 0.2rem 0.1rem 0.5rem rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
   color: #fff; /* Change the font color of the caption */
@@ -63,7 +63,7 @@
 .card-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px; /* Add margin for spacing */
+  padding: 2rem;
 }
 
 /* Styles for individual ReviewCards */
@@ -71,21 +71,19 @@
   width: 30%;
   padding: 20px;
   border: 10px solid #9f6f81;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 
 /* The Footer */
 .footer {
   display: flex;
   justify-content: space-around;
-  padding-top: 270px;
   margin-top: 100px;
+  border-top: 1px solid #ccc;
+  padding-top: 50px;
 }
 
 .footer-column {
   flex: 1;
-  margin-right: 20px;
   line-height: 1.5; /* Adjust line height here */
 }
 
@@ -115,8 +113,8 @@
   display: flex;
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  margin-top: 160px; /* Add margin to the top */
-  height: 200px; /* Adjust the height as needed */
+  /* margin-top: 160px; /* Add margin to the top */
+  padding: 20px;
 }
 
 .banner-text {
@@ -128,13 +126,16 @@
 
 .service-card {
   display: flex;
-  margin-right: 60px;
+  flex-direction: row;
   margin-top: 160px;
-  margin-bottom: 160px; /* Add margin-bottom to create space */
+  margin-bottom: 160px;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .service-image {
-  margin-left: 350px;
   width: 50%;
   height: 50%;
   border-radius: 10px 0 0 10px;
@@ -146,7 +147,6 @@
 }
 
 .service-header {
-  margin-top: 200px;
   font-size: 1.5rem;
   color: #333333;
 }
@@ -161,44 +161,41 @@
   color: #ffffff;
   background-color: #179d97;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   cursor: pointer;
 }
 
 /* This is the free consultation button for the ServiceCard*/
 .service-button:hover {
-  background-color: #9f6f81;
+  background-color: #9f6f81 !important;
 }
 
 /* Gallery service-video-card Logic */
 
 .service-video-card {
   display: flex;
-  margin-top: 160px;
-  margin-bottom: 220px; /* Add margin-bottom to create space */
-  margin-right: 240px;
+  padding: 5%;
 }
 
 .rounded-video-container {
-  border-top-left-radius: 10px; /* Adjust the radius as needed */
-  border-top-right-radius: 10px; /* Adjust the radius as needed */
-  border-bottom-left-radius: 22px; /* Adjust the radius as needed */
-  border-bottom-right-radius: 22px; /* Adjust the radius as needed */
   overflow: hidden; /* Ensure the video is clipped to the rounded shape */
+  width: 50%;
 }
-
 
 .service-video-content {
   flex: 1; /* Take up remaining space */
   padding: 2rem;
-  margin-top: -90px; /* Adjust the value as needed to move it upward */
 }
 
-
 .service-video {
-  width: 50%; /* Video takes up half the width */
+  width: 100%; /* Video takes up half the width */
   height: auto; /* Maintains aspect ratio */
-  border-radius: 10px; /* Rounded corners */
+}
+
+.service-video iframe {
+  /* targets the youtube video iFrame component that embeds it */
+  border-radius: 1rem;
+  width: 100%;
 }
 
 /* Carousel_Gallery Design Logic */
@@ -222,15 +219,66 @@
 }
 
 .why-header {
-  margin-right: 20px;  /* Adjust the margin as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
 }
 
 .why-line {
-  width: 100%;  /* Line extends the full width of the container */
-  height: 2px;   /* Adjust the height of the line as needed */
-  background-color: #000;  /* Adjust the color of the line as needed */
-  margin-top: 5px;  /* Adjust the top margin to create space between header and line */
+  width: 100%; /* Line extends the full width of the container */
+  height: 2px; /* Adjust the height of the line as needed */
+  background-color: #000; /* Adjust the color of the line as needed */
+  margin-top: 5px; /* Adjust the top margin to create space between header and line */
 }
 
+.gallery-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+@media screen and (max-width: 1200px) {
+  .service-card {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
 
+  .service-content {
+    margin: 0;
+  }
+
+  .service-video-card {
+    flex-direction: column-reverse;
+  }
+
+  .rounded-video-container {
+    width: 100%;
+  }
+
+  .card-container {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0px 0px 1rem 0px;
+  }
+
+  .footer {
+    flex-direction: column;
+    margin: 3rem 0 0 0;
+  }
+
+  .gallery-card {
+    flex-direction: column;
+  }
+}
