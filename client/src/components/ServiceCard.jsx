@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 const ServiceCard = ({ image, header, description }) => {
   return (
@@ -8,13 +8,18 @@ const ServiceCard = ({ image, header, description }) => {
       <div className="service-content">
         <h3 className="service-header">{header}</h3>
         <p className="service-description">{description}</p>
-        <Link
-          to="/consultation"
-          className="service-button"
-          style={{ textDecoration: "none" }}
+        <Button
+          style={{
+            backgroundColor: '#179d97',
+            color: 'white',
+            padding: '10px',
+          }}
+          size="lg"
         >
-          Free Design Consultation
-        </Link>
+          <Link to="/consultation" style={{ textDecoration: 'none', color: 'white' }}>
+            Free Design Consultation
+          </Link>
+        </Button>
       </div>
     </div>
   );
