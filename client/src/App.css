@@ -229,6 +229,16 @@
   margin-top: 5px; /* Adjust the top margin to create space between header and line */
 }
 
+.gallery-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1200px) {
   .service-card {
     margin: 0;
@@ -265,6 +275,10 @@
 
   .footer {
     flex-direction: column;
-    margin: 0;
+    margin: 3rem 0 0 0;
+  }
+
+  .gallery-card {
+    flex-direction: column;
   }
 }

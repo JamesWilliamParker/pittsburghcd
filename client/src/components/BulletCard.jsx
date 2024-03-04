@@ -1,13 +1,12 @@
-const BulletCard = ({ leftHeader, centerHeader, rightHeader, fontSize, color, marginLeft, marginRight, marginTop, lineColor }) => {
+const BulletCard = ({ leftHeader, centerHeader, rightHeader, fontSize, color, lineColor }) => {
   const cardStyle = {
     display: 'flex',
     justifyContent: 'space-between',
-    marginLeft: marginLeft,
-    marginRight: marginRight,
-    marginTop: marginTop,
-    position: 'relative',
+    padding: '1rem',
     listStyleType: 'none', // Remove default list styles
     paddingLeft: '0', // Remove default left padding for list items
+    maxWidth: '1200px',
+    margin: '0 auto',
   };
 
   const headerStyle = {
@@ -16,17 +15,11 @@ const BulletCard = ({ leftHeader, centerHeader, rightHeader, fontSize, color, ma
   };
 
   const lineStyleTop = {
-    position: 'absolute',
-    top: '-50px', // Adjust position of line above
-    left: '0',
     width: '100%',
     borderTop: '15px solid ' + lineColor, // Style of line above thickness
   };
 
   const lineStyleBottom = {
-    position: 'absolute',
-    bottom: '-50px', // Adjust position of line below
-    left: '0',
     width: '100%',
     borderTop: '15px solid ' + lineColor, // Style of line below thickness
   };
@@ -36,9 +29,9 @@ const BulletCard = ({ leftHeader, centerHeader, rightHeader, fontSize, color, ma
   };
 
   return (
-    <div style={{ position: 'relative' }}>
+    <>
       <div style={lineStyleTop}></div>
-      <ul style={cardStyle}>
+      <ul className="gallery-card">
         <li style={headerStyle}>
           <span style={bulletStyle}>•</span>
           {leftHeader}
@@ -53,7 +46,7 @@ const BulletCard = ({ leftHeader, centerHeader, rightHeader, fontSize, color, ma
         </li>
       </ul>
       <div style={lineStyleBottom}></div>
-    </div>
+    </>
   );
 };
 
