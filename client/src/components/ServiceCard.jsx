@@ -9,6 +9,7 @@ const ServiceCard = ({ image, header, description }) => {
         <h3 className="service-header">{header}</h3>
         <p className="service-description">{description}</p>
         <Button
+          className="service-button"
           style={{
             backgroundColor: '#179d97',
             color: 'white',

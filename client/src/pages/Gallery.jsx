@@ -32,6 +32,7 @@ const Gallery = () => {
       {/* The Button */}
       <div style={{ textAlign: 'center', marginTop: '100px' }}>
         <Button
+          className="service-button"
           style={{
             backgroundColor: '#179d97',
             color: 'white',
@@ -39,7 +40,7 @@ const Gallery = () => {
           }}
           size="lg"
         >
-          <Link to="/consultation" style={{ textDecoration: 'none', color: "white" }}>
+          <Link to="/consultation" style={{ textDecoration: 'none', color: 'white' }}>
             Free Design Consultation
           </Link>
         </Button>

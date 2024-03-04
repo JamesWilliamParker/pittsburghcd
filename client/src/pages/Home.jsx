@@ -34,6 +34,7 @@ const Home = () => {
         ))}
       </div>
       <Button
+        className="service-button"
         style={{
           backgroundColor: '#179d97',
           color: 'white',
