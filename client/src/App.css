@@ -238,6 +238,12 @@
   margin: 0 auto;
 }
 
+/* Privacy Page PDF */
+.pdf {
+  width: 100%;
+  height: calc(100vh);
+}
+
 @media screen and (max-width: 1200px) {
   .service-card {
     margin: 0;
