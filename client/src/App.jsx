@@ -17,6 +17,7 @@ import Careers from './pages/Careers';
 import LogIn from './pages/Login';
 import Blog from './pages/Blog';
 import BlogConfiguration from './pages/BlogConfiguration';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -47,7 +48,10 @@ function App() {
 
           <Route path="login" element={<LogIn />} />
           <Route path="blog" element={<Blog />} />
+
+          {/* PROTECTED ROUTES HERE */}
           <Route path="blog-configuration" element={<BlogConfiguration />} />
+          <Route path="register" element={<Register />} />
         </Route>
       </Routes>
     </>

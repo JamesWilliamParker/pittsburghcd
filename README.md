@@ -8,6 +8,8 @@
 3. On Terminal 2: run `npm install`. This install the React Application libraries and dependencies.
 4. On Terminal 1: at the project base directory run `npm run dev`. This will run the server for development.
 5. On Terminal 2: on the client's directory run `npm run dev`. This will run the client React Application for development.
+6. On the project directory add a file named `.env` make sure to include the period in the beginning of the file name!
+   6.1 The contents of the file should be as follows: `JWT_SECRET=JWTCODESHAREDAMONGTEAMMEMBERSHERE`
 
 ## Make your own branch
 
