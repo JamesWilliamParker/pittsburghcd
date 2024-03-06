@@ -32,7 +32,7 @@
   width: 300px;
   height: 300px;
   border-radius: 150px;
-  border: 3px solid rgb(99, 3, 3);
+  border: 3px solid #9f6f81;
   background-color: gray;
   box-shadow: 5px 20px 18px #0004;
   margin: 30px 0;
@@ -43,7 +43,7 @@
   max-width: 600px;
   margin: 20px auto;
   border-radius: 18px;
-  border: 3px solid rgb(99, 3, 3);
+  border: 3px solid #9f6f81;
   background-color: gray;
   box-shadow: 5px 10px 18px #0004;
 }
@@ -102,6 +102,14 @@
 
 .dynamic-blog p {
   min-height: 100px;
+}
+
+.selected-blog ul {
+  padding: 0 0 0 2rem;
+}
+
+.selected-blog ol {
+  padding: 0 0 0 2rem;
 }
 
 .dynamic-blog-summary {

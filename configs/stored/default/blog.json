@@ -1,8 +1,12 @@
 {
-  "title": "Main Title of the blog page",
-  "fixed": { "sectionOneTitle": "Title for the first static section on the blog", "sectionTwoTitle": "Title for the second static section on the blog", "sectionThreeTitle": "Title for the third static section on the blog" },
+  "title": "",
+  "fixed": {
+    "sectionOneTitle": "Title for the first static section on the blog",
+    "sectionTwoTitle": "Title for the second static section on the blog",
+    "sectionThreeTitle": "Title for the third static section on the blog"
+  },
   "dynamic": {
-    "sectionTitle": "The title on the dynamic portion of the blog",
+    "sectionTitle": "Pittsburgh Closets & Doors Blogs",
     "blogsList": [
       {
         "blogTitle": "The title of a blog item added through the browser",
