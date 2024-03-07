@@ -11,7 +11,7 @@ const StorageSolutions = () => {
   return (
     <div>
       <Banner
-        text="Discover smart storage solutions to declutter your space and simplify your life."
+        text="No pushy sales tactics. No phony discounts. No inflated prices. Simply a pleasurable experience with trustworthy experts!"
         width="100%"
         height="55px"
         backgroundColor="#9f6f81"
@@ -24,7 +24,7 @@ const StorageSolutions = () => {
         />
 
         <Banner
-          text="From pantry to garage, we have storage solutions for every area of your home."
+          text="Lifetime Warranty: We provide a lifetime warranty against defects. Additionally, we guarantee our installation will be beautifully and properly installed."
           width="100%"
           height="55px"
           backgroundColor="#9f6f81"
@@ -34,6 +34,13 @@ const StorageSolutions = () => {
           image={service_image_11}
           header="Pantry"
           description="Find what you need, in style!"
+        />
+
+        <Banner
+          text="Speak directly with our team, not a 1-800 number! Experience personalized service every time you call!"
+          width="100%"
+          height="55px"
+          backgroundColor="#9f6f81"
         />
 
         <ServiceCard
