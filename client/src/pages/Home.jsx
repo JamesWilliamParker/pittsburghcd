@@ -25,7 +25,7 @@ const Home = () => {
   ];
 
   return (
-    <div style={{ background: '#f2f2f2', minHeight: '100vh' }}>
+    <div style={{ minHeight: '100vh' }}>
       <Carousel />
       <div className="card-container mt-5">
         {cardsData.map((data, index) => (

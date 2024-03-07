@@ -96,7 +96,7 @@ const NavBar = () => {
           </Nav>
         </Collapse>
       </Navbar>
-
+      <div className="nav-spacer"></div>
       <Outlet />
       <Footer />
     </>

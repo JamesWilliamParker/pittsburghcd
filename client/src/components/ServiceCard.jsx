@@ -12,7 +12,6 @@ const ServiceCard = ({ image, header, description, reverse = false, noButton }) 
           <Button
             className="service-button"
             style={{
-              backgroundColor: '#179d97',
               color: 'white',
               padding: '10px',
             }}
