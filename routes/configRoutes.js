@@ -6,6 +6,8 @@ const uuid = require('uuid');
 
 const { isValidFileNameMiddleware, isValidPostFileNameMiddleware } = require('../lib/utils');
 
+const authenticateToken = require('../middlewares/authMiddleware');
+
 const assignIdAndPrepareStorageLocation = () => {
   const returnObject = {};
   while (!returnObject.filePath) {
@@ -26,7 +28,7 @@ const assignIdAndPrepareStorageLocation = () => {
 };
 
 // Define your routes using the router object
-router.post('/', isValidPostFileNameMiddleware, (req, res) => {
+router.post('/', authenticateToken, isValidPostFileNameMiddleware, (req, res) => {
   // Implementation for create route
   const { data, name } = req.body;
 
@@ -53,7 +55,7 @@ router.post('/', isValidPostFileNameMiddleware, (req, res) => {
   });
 });
 
-router.put('/:id', isValidFileNameMiddleware, (req, res) => {
+router.put('/:id', authenticateToken, isValidFileNameMiddleware, (req, res) => {
   // Implementation for update route
   const { id } = req.params;
   const { name, data } = req.body;
@@ -79,7 +81,7 @@ router.put('/:id', isValidFileNameMiddleware, (req, res) => {
   });
 });
 
-router.delete('/:id/:name', isValidFileNameMiddleware, (req, res) => {
+router.delete('/:id/:name', authenticateToken, isValidFileNameMiddleware, (req, res) => {
   // Implementation for delete route
   const { id, name } = req.params;
 

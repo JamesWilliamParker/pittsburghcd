@@ -9,6 +9,7 @@ const cors = require('cors');
 
 // Importing server files after this line
 const configRoutes = require('./routes/configRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -27,6 +28,8 @@ app.use(cors(corsOptions));
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
+
+app.use('/api', authRoutes);
 
 app.use('/api/configurations', configRoutes);
 

@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { Button, Row, Input, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { loadBlogConfig, updateBlogConfig } from '../lib/utils/configurationUtils';
 import Markdown from 'react-markdown';
+import WithAuth from '../components/WithAuth';
 
-export default function BlogConfiguration() {
+function BlogConfiguration() {
   const [blogConfig, setBlogConfig] = useState(null);
   const [blogIndex, setBlogIndex] = useState(null);
 
@@ -113,7 +114,7 @@ export default function BlogConfiguration() {
         <ModalHeader toggle={toggle}>Are you sure you want to delete this blog?</ModalHeader>
         <ModalBody>This operation is permanent and will be performed automatically after clicking Delete</ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={deleteBlogConfig}>
+          <Button color="danger" onClick={deleteBlogConfig}>
             Delete
           </Button>{' '}
           <Button color="secondary" onClick={toggle}>
@@ -124,3 +125,7 @@ export default function BlogConfiguration() {
     </div>
   );
 }
+
+const BlogConfigurationWithAuth = WithAuth(BlogConfiguration);
+
+export default BlogConfigurationWithAuth;

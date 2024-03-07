@@ -1,33 +1,26 @@
-import { useEffect, useState } from "react";
-import { Button, Row, Col } from "reactstrap";
-import { loadBlogConfig } from "../lib/utils/configurationUtils";
-import Markdown from "react-markdown";
+import { useEffect, useState } from 'react';
+import { Button, Row, Col } from 'reactstrap';
+import { loadBlogConfig } from '../lib/utils/configurationUtils';
+import Markdown from 'react-markdown';
 
-import Banner from "../components/Banner";
+import Banner from '../components/Banner';
 
 export default function Blog() {
   const [blogConfig, setBlogConfig] = useState(null);
   const [selectedBlogConfig, setSelectedBlogConfig] = useState(null);
 
-  useEffect(
-    () => loadBlogConfig({ blogConfig, setBlogConfig }),
-    [blogConfig, setBlogConfig]
-  );
+  useEffect(() => loadBlogConfig({ blogConfig, setBlogConfig }), [blogConfig, setBlogConfig]);
 
   console.log({ blogConfig });
 
   // destructuring the contents of the blog configuration obtained from the server
   if (!blogConfig) return null;
 
-  const { title, fixed, dynamic } = blogConfig;
+  const { title, dynamic } = blogConfig;
 
   return (
     <>
-      <Banner
-        text={title.toUpperCase()}
-        width="100%"
-        backgroundColor="#9f6f81"
-      />
+      <Banner text={title.toUpperCase()} width="100%" backgroundColor="#9f6f81" />
       <div className="page">
         <div className="blog-section">
           <h2>{dynamic?.sectionTitle}</h2>
@@ -39,43 +32,26 @@ export default function Blog() {
                     <h3>{selectedBlogConfig.blogTitle}</h3>
                   </Col>
                   <Col sm="3" className="right-col">
-                    <Button onClick={() => setSelectedBlogConfig(null)}>
-                      Go Back
-                    </Button>
+                    <Button onClick={() => setSelectedBlogConfig(null)}>Go Back</Button>
                   </Col>
                 </Row>
                 <Row sm="12" className="blog-row" noGutters>
-                  <img
-                    src={selectedBlogConfig.blogImage}
-                    alt={`Image of ${selectedBlogConfig.blogTitle}`}
-                    className="main-blog-image"
-                  />
+                  <img src={selectedBlogConfig.blogImage} alt={`Image of ${selectedBlogConfig.blogTitle}`} className="main-blog-image" />
                 </Row>
                 <Row sm="12" className="blog-row" noGutters>
                   <Markdown>{selectedBlogConfig.blogBody}</Markdown>
                 </Row>
                 <Row sm="12" className="blog-row" noGutters>
-                  <Button onClick={() => setSelectedBlogConfig(null)}>
-                    Go Back
-                  </Button>
+                  <Button onClick={() => setSelectedBlogConfig(null)}>Go Back</Button>
                 </Row>
               </div>
             ) : (
-              dynamic?.blogsList?.map((blogObject) => (
+              dynamic?.blogsList?.map(blogObject => (
                 <div key={blogObject.blogTitle} className="dynamic-blog">
                   <h4>{blogObject.blogTitle}</h4>
-                  <img
-                    src={blogObject.blogImage}
-                    alt={`Image of ${blogObject.blogTitle}`}
-                    className="summary-blog-image"
-                  />
-                  <p className="dynamic-blog-summary">
-                    {blogObject.blogSummary}
-                  </p>
-                  <Button
-                    className="service-button"
-                    onClick={() => setSelectedBlogConfig(blogObject)}
-                  >
+                  <img src={blogObject.blogImage} alt={`Image of ${blogObject.blogTitle}`} className="summary-blog-image" />
+                  <p className="dynamic-blog-summary">{blogObject.blogSummary}</p>
+                  <Button className="service-button" onClick={() => setSelectedBlogConfig(blogObject)}>
                     Read More
                   </Button>
                 </div>
