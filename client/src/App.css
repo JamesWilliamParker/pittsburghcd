@@ -4,6 +4,10 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.spacer {
+  height: 2rem;
+}
 /* Nav. Bar */
 .navbar-nav .nav-link {
   font-size: 1.2rem; /* Adjust the size as needed */
@@ -130,9 +134,18 @@
   margin-top: 160px;
   margin-bottom: 160px;
   padding: 5%;
-  display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.service-card-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 160px;
+  margin-bottom: 160px;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-image {
@@ -244,12 +257,54 @@
   height: calc(100vh);
 }
 
+.about-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about-header h2 {
+  padding: 1rem;
+  display: flex;
+}
+
+hr {
+  border-top: 0.3rem solid black;
+}
+
+.about-header hr {
+  flex: 1;
+  height: 1rem;
+  border-top: 0.3rem solid #9f6f81;
+  border-bottom: 0.3rem solid #9f6f81;
+  padding: 0 1rem;
+}
+
+.about-cards-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem 1rem 1rem 10rem;
+  text-align: left;
+}
+
+.about-cards-row h5 {
+  padding-bottom: 1rem;
+}
+
 @media screen and (max-width: 1200px) {
   .service-card {
     margin: 0;
     flex-direction: column;
     align-items: center;
   }
+
+  .service-card-reverse {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .service-image {
     width: 100%;
     height: 100%;

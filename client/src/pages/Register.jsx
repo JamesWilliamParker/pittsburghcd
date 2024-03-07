@@ -3,6 +3,7 @@ import { Button, FormGroup, Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import WithAuth from '../components/WithAuth';
+import AdminNav from '../components/AdminNav';
 
 function Register() {
   const [username, setUsername] = useState('');
@@ -46,12 +47,17 @@ function Register() {
 
   return (
     <div className="page">
+      <AdminNav />
       <h2>REGISTER</h2>
+      <div className="spacer"></div>
       <form onSubmit={handleSubmit}>
         <FormGroup className="register-form">
           <Input type="email" name="username" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} />
+          <div className="spacer"></div>
           <Input type={showPassword ? 'text' : 'password'} name="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
+          <div className="spacer"></div>
           <Input type={showPassword ? 'text' : 'password'} name="verifyPassword" placeholder="Verify Password" value={verifyPassword} onChange={e => setVerifyPassword(e.target.value)} />
+          <div className="spacer"></div>
           {error && <div style={{ color: 'red' }}>{error}</div>}
           <Button className="service-button" color="primary" type="submit">
             Register

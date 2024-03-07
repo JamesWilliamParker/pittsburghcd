@@ -3,6 +3,7 @@ import { Button, Row, Input, Modal, ModalHeader, ModalBody, ModalFooter } from '
 import { loadBlogConfig, updateBlogConfig } from '../lib/utils/configurationUtils';
 import Markdown from 'react-markdown';
 import WithAuth from '../components/WithAuth';
+import AdminNav from '../components/AdminNav';
 
 function BlogConfiguration() {
   const [blogConfig, setBlogConfig] = useState(null);
@@ -77,6 +78,7 @@ function BlogConfiguration() {
 
   return (
     <div className="page">
+      <AdminNav />
       <h2>BLOG CONFIGURATION</h2>
       <div className="blog-section">
         <h4>Complete this form and click Add New Blog, then your blog will be added to the top of the list.</h4>
