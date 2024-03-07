@@ -41,3 +41,11 @@ At this point your project is both installed and the client is built so that it 
 - Using Postman or Insomnia you can test the local server by submitting a get request to: `http://localhost:8080/api/configurations/default/blog`
   - This will request the default base blog configuration from the server.
 - There are ways to update and even delete configurations built into the server, please refer to the `/routes/configRoutes.js` file to understand more.
+
+## Blog Users
+
+- Users are stored in `storage/auth.json`.
+- Admin has to log in to create new blog user accounts.
+- Admin logs in, then goes to /register, then types new accounts email and password.
+- The account password cannot be recovered.
+- Accounts can only be deleted in the `storage/auth.json`.
