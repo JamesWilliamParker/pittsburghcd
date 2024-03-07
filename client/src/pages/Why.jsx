@@ -68,12 +68,10 @@ const Why = () => {
               {cards.map(card => {
                 return (
                   <Card
-                    className="my-2"
+                    className="my-2 about-cards"
                     color="dark"
                     outline
-                    style={{
-                      width: '30%',
-                    }}
+
                     key={title + card.title}
                   >
                     <CardBody>

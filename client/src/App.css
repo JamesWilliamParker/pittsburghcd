@@ -137,23 +137,23 @@
 /* Styles for ServiceCard component */
 
 .service-card {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 160px;
-  margin-bottom: 160px;
   padding: 5%;
   justify-content: center;
   align-items: center;
 }
 
 .service-card-reverse {
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
-  margin-top: 160px;
-  margin-bottom: 160px;
+
   padding: 5%;
   justify-content: center;
   align-items: center;
+  text-align: justify;
 }
 
 .service-image {
@@ -162,8 +162,18 @@
   border-radius: 10px 0 0 10px;
 }
 
+.service-image-col {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
 .service-content {
   margin-left: 150px;
+  padding: 2rem;
+}
+
+.service-text {
   padding: 2rem;
 }
 
@@ -296,6 +306,10 @@ hr {
   text-align: left;
 }
 
+.about-cards {
+  width: 30%;
+}
+
 .about-cards-row h5 {
   padding-bottom: 1rem;
 }
@@ -303,13 +317,13 @@ hr {
 @media screen and (max-width: 1200px) {
   .service-card {
     margin: 0;
-    flex-direction: column;
+
     align-items: center;
   }
 
   .service-card-reverse {
     margin: 0;
-    flex-direction: column;
+
     align-items: center;
   }
 
@@ -317,6 +331,10 @@ hr {
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0px 0px;
+  }
+
+  .service-image-col {
+    border-radius: 10px 10px 0 0px;
   }
 
   .service-content {
@@ -348,5 +366,15 @@ hr {
 
   .gallery-card {
     flex-direction: column;
+  }
+
+  .about-cards-row {
+    justify-content: space-around;
+    padding: 1rem 1rem 1rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .about-cards {
+    width: 100%;
   }
 }

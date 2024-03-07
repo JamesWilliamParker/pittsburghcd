@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
-import { Button } from 'reactstrap';
+import { Button, Row, Col } from 'reactstrap';
 
 const ServiceCard = ({ image, header, description, reverse = false, noButton }) => {
   return (
-    <div className={reverse ? 'service-card-reverse' : 'service-card'}>
-      <img src={image} alt="Service" className="service-image" />
-      <div className="service-content">
+    <Row className={reverse ? 'service-card-reverse' : 'service-card'}>
+      <Col xs="12" md="12" lg="6">
+        <img src={image} alt="Service" className="service-image-col" />
+      </Col>
+      <Col xs="12" md="12" lg="6" className="service-text">
         <h3 className="service-header">{header}</h3>
         <p className="service-description">{description}</p>
         {!noButton && (
@@ -22,8 +24,8 @@ const ServiceCard = ({ image, header, description, reverse = false, noButton }) 
             </Link>
           </Button>
         )}
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 
