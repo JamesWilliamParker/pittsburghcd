@@ -102,7 +102,7 @@ function Example(args) {
   });
 
   return (
-    <Carousel activeIndex={activeIndex} next={next} previous={previous} {...args}>
+    <Carousel fade enableTouch activeIndex={activeIndex} next={next} previous={previous} {...args}>
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
