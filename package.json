@@ -8,7 +8,10 @@
     "dev": "nodemon index.js",
     "client-install": "cd client && npm install && cd ..",
     "client-build": "cd client && npm run build && cd ..",
-    "client-dev": "cd client && npm run dev"
+    "client-dev": "cd client && npm run dev",
+    "dev-client": "cd client && npm run dev",
+    "package": "mkdir release && rsync -av --exclude='client' --exclude='.git' --exclude='release' ./ release/ && mkdir -p release/client/dist && rsync -av ./client/dist/* release/client/dist/ && echo 'Deployment package created successfully.'",
+    "build": "npm run client-install && npm run client-build"
   },
   "author": "James Parker",
   "license": "MIT",
@@ -19,7 +22,8 @@
     "express": "^4.18.2",
     "helmet": "^7.1.0",
     "mongoose": "^8.1.2",
-    "react-youtube": "^10.1.0"
+    "react-youtube": "^10.1.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.3"

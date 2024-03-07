@@ -1,6 +1,7 @@
 // ServiceCard2.jsx
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 const ServiceCard2 = ({ image, header, description }) => {
   return (
@@ -8,13 +9,19 @@ const ServiceCard2 = ({ image, header, description }) => {
       <div className="service-content">
         <h3 className="service-header">{header}</h3>
         <p className="service-description">{description}</p>
-        <Link
-          to="/consultation"
+        <Button
           className="service-button"
-          style={{ textDecoration: "none" }}
+          style={{
+            backgroundColor: '#179d97',
+            color: 'white',
+            padding: '10px',
+          }}
+          size="lg"
         >
-          Free Design Consultation
-        </Link>
+          <Link to="/consultation" style={{ textDecoration: 'none', color: 'white' }}>
+            Free Design Consultation
+          </Link>
+        </Button>
       </div>
       <img src={image} alt="Service" className="service-image" />
     </div>

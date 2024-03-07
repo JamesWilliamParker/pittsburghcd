@@ -1,0 +1,159 @@
+.blog-card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.summary-blog-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border: 3px solid #9f6f81;
+  background-color: gray;
+  box-shadow: 5px 20px 18px #0004;
+  margin: 30px 0;
+}
+
+.main-blog-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 18px;
+  border: 3px solid #9f6f81;
+  background-color: gray;
+  box-shadow: 5px 10px 18px #0004;
+}
+
+.blog-section {
+  width: 100%;
+  min-height: 200px;
+  margin: 20px 0px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  box-shadow: 0px 5px 18px #0004;
+}
+
+.blog-section h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.blog-section input {
+  margin: 20px 0px;
+}
+
+.blog-section textarea {
+  margin: 20px 0px;
+}
+
+.dynamic-blog-section {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dynamic-blog {
+  width: 350px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 5px 18px #0004;
+  border-radius: 18px;
+}
+
+.dynamic-blog h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.dynamic-blog p {
+  min-height: 100px;
+}
+
+.selected-blog ul {
+  padding: 0 0 0 2rem;
+}
+
+.selected-blog ol {
+  padding: 0 0 0 2rem;
+}
+
+.dynamic-blog-summary {
+  text-align: left;
+  margin: 18px 0;
+}
+
+.selected-blog {
+  width: 100%;
+}
+
+.blog-row {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.login-form {
+  margin: 40px;
+  max-width: 450px;
+}
+
+.login-form input {
+  margin: 20px 0;
+}
+
+.divider {
+  margin: 20px auto;
+  min-width: 100px;
+  max-width: 1000px;
+  width: 50vw;
+  min-height: 2px;
+  background-color: black;
+}
+
+.markdown {
+  text-align: left;
+  padding: 20px;
+}

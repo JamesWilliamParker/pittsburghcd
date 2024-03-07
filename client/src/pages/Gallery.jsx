@@ -1,18 +1,14 @@
-import React from "react";
-import ServiceVideoCard from "../components/ServiceVideoCard";
-import BulletCard from "../components/BulletCard";
-import Carousel_Gallery from "../components/Carousel_Gallery";
-import { Link } from "react-router-dom";
+import ServiceVideoCard from '../components/ServiceVideoCard';
+import BulletCard from '../components/BulletCard';
+import Carousel_Gallery from '../components/Carousel_Gallery';
+import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 const Gallery = () => {
   return (
     <div>
       {/* The ServiceVideoCard */}
-      <ServiceVideoCard
-        videoId="0Huazog37Qs"
-        header="Discover the beauty of a perfectly organized home."
-        description="The perfect combination of Quality & Beauty, tailored to your style and budget!"
-      />
+      <ServiceVideoCard videoId="0Huazog37Qs" header="Discover the beauty of a perfectly organized home." description="The perfect combination of Quality & Beauty, tailored to your style and budget!" />
 
       {/* The BulletCard */}
       <BulletCard
@@ -28,19 +24,25 @@ const Gallery = () => {
       />
 
       {/* The Carousel */}
-      <div style={{ marginTop: "150px" }}>
+      <div style={{ marginTop: '150px' }}>
         <Carousel_Gallery />
       </div>
 
       {/* The Button */}
-      <div style={{ textAlign: "center", marginTop: "100px" }}>
-        <Link
-          to="/consultation"
+      <div style={{ textAlign: 'center', marginTop: '100px' }}>
+        <Button
           className="service-button"
-          style={{ textDecoration: "none" }}
+          style={{
+            backgroundColor: '#179d97',
+            color: 'white',
+            padding: '10px',
+          }}
+          size="lg"
         >
-          Free Design Consultation
-        </Link>
+          <Link to="/consultation" style={{ textDecoration: 'none', color: 'white' }}>
+            Free Design Consultation
+          </Link>
+        </Button>
       </div>
     </div>
   );

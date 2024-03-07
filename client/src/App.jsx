@@ -1,20 +1,22 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import NavBar from "./components/NavBar";
-import Home from "./pages/Home";
-import Why from "./pages/Why";
-import Closets from "./pages/Closets";
-import Consultation from "./pages/Consultation";
-import Gallery from "./pages/Gallery";
-import Doors from "./pages/Doors";
-import Entryway from "./pages/Entryway";
-import Garage from "./pages/Garage";
-import Living from "./pages/Living";
-import Storage from "./pages/Storage";
-import Workspace from "./pages/Workspace";
-import Privacy from "./pages/Privacy";
-import Careers from "./pages/Careers";
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
+import Why from './pages/Why';
+import Closets from './pages/Closets';
+import Consultation from './pages/Consultation';
+import Gallery from './pages/Gallery';
+import Doors from './pages/Doors';
+import Entryway from './pages/Entryway';
+import Garage from './pages/Garage';
+import Living from './pages/Living';
+import Storage from './pages/Storage';
+import Workspace from './pages/Workspace';
+import Privacy from './pages/Privacy';
+import Careers from './pages/Careers';
+import LogIn from './pages/Login';
+import Blog from './pages/Blog';
+import BlogConfiguration from './pages/BlogConfiguration';
 
 function App() {
   return (
@@ -42,6 +44,10 @@ function App() {
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
           {/* <Route path="*" element={<NoMatch />} /> */}
+
+          <Route path="login" element={<LogIn />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog-configuration" element={<BlogConfiguration />} />
         </Route>
       </Routes>
     </>
