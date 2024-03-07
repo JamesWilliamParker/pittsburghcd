@@ -20,9 +20,21 @@ function Register() {
     }
 
     try {
-      const response = await axios.post('/api/register', { username, password });
-      const token = response.data.token;
-      if (token) {
+      const token = localStorage.getItem('token');
+
+      const response = await axios.post(
+        '/api/register',
+        { username, password },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      const newToken = response.data.token;
+
+      if (newToken) {
         window.location.href = '/login';
       } else {
         throw new Error('No Token received form server!');
