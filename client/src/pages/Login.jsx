@@ -24,6 +24,7 @@ export default function LogIn() {
 
   return (
     <div className="page">
+      <div className="spacer"></div>
       <h2>LOG IN</h2>
       <form onSubmit={handleSubmit}>
         <FormGroup className="login-form">
