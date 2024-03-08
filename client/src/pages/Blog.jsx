@@ -14,7 +14,7 @@ export default function Blog() {
   // destructuring the contents of the blog configuration obtained from the server
   if (!blogConfig) return null;
 
-  const { title, dynamic } = blogConfig;
+  const { dynamic } = blogConfig;
 
   return (
     <div className="page-container">
