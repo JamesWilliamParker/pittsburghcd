@@ -11,25 +11,25 @@
       {
         "blogTitle": "The title of a blog item added through the browser",
         "blogSummary": "This blog summary was added through the form in the browser, to test functionality with the server",
-        "blogImage": "https://lh3.googleusercontent.com/p/AF1QipMU6dmdWzsheRZZGKq2Q0sSfX5erMasysPH2put=s680-w680-h510",
+        "blogImage": "https://res.cloudinary.com/drjdirnot/image/upload/v1709923811/office_l22s5k.jpg",
         "blogBody": "## This is a heading\n\n- list with code: `code`\n\n### Another heading"
       },
       {
         "blogTitle": "The title for a given blog in the blog list",
         "blogSummary": "A Summary that is less than 300 characters. Lorem ipsum dolor sit amet, consectetur adip",
-        "blogImage": "https://cdn.pixabay.com/photo/2019/09/27/10/00/children-4508017_960_720.jpg",
+        "blogImage": "https://res.cloudinary.com/drjdirnot/image/upload/v1709923811/office_l22s5k.jpg",
         "blogBody": "The contents of the first blog in plain text or markdown format for a maximum of 40,000 characters"
       },
       {
         "blogTitle": "The Second title for a given blog in the blog list",
         "blogSummary": "A Second Summary that is less than 300 characters. Lorem ipsum dolor sit amet, consectetur adip.Lorem ipsum dolor sit amet, consectetur adip",
-        "blogImage": "https://cdn.pixabay.com/photo/2019/09/27/10/00/children-4508017_960_720.jpg",
+        "blogImage": "https://res.cloudinary.com/drjdirnot/image/upload/v1709923811/office_l22s5k.jpg",
         "blogBody": "The contents of the second blog in plain text or markdown format for a maximum of 40,000 characters"
       },
       {
         "blogTitle": "The Third title for a given blog in the blog list",
         "blogSummary": "A Third Summary that is less than 300 characters. Lorem ipsum dolor sit amet, consectetur adip. Lorem ipsum dolor sit amet, consectetur adip. Lorem ipsum dolor sit amet, consectetur adip",
-        "blogImage": "https://cdn.pixabay.com/photo/2019/09/27/10/00/children-4508017_960_720.jpg",
+        "blogImage": "https://res.cloudinary.com/drjdirnot/image/upload/v1709923811/office_l22s5k.jpg",
         "blogBody": "### The contents of the third blog in plain text \n or markdown format for a maximum of 40,000 characters"
       }
     ]
