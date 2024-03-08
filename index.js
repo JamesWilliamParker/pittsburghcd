@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 8080;
 
 // CSP Middleware
 const setCSPHeaders = (req, res, next) => {
-  res.setHeader('Content-Security-Policy', "default-src 'self' https://docs.google.com https://www.youtube.com");
+  res.setHeader('Content-Security-Policy', "default-src 'self' https://docs.google.com https://www.youtube.com; script-src 'self' https://www.youtube.com");
   next();
 };
 
@@ -24,9 +24,6 @@ const setCSPHeaders = (req, res, next) => {
 const corsOptions = {
   origin: process.env.CORS_URL ? new RegExp(`/^${process.env.CORS_URL}:\d+$/`) : /^http:\/\/localhost:\d+$/, // Change this to match your own host
 };
-
-// Use CSP middleware
-app.use(setCSPHeaders);
 
 // Serve static React build files
 app.use(express.static(path.join(__dirname, 'client/dist')));
@@ -41,6 +38,9 @@ app.use(express.json());
 app.use('/api', authRoutes);
 
 app.use('/api/configurations', configRoutes);
+
+// Use CSP middleware
+app.use(setCSPHeaders);
 
 // Handle non-API routes by serving the React app
 app.get('*', (req, res) => {
