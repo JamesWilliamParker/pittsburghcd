@@ -18,25 +18,14 @@ import axios from 'axios';
 
 export const loadBlogConfig = ({ blogConfig, setBlogConfig }) => {
   if (!blogConfig) {
-    const token = localStorage.getItem('token');
-    if (token) {
-      axios
-        .get('/api/configurations/default/blog', {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        })
-        .then(response => {
-          if (response.data) setBlogConfig(response.data);
-        })
-        .catch(error => {
-          console.error('Error loading blog config:', error);
-          window.location.href = '/login';
-        });
-    } else {
-      window.location.href = '/login';
-      console.error('JWT token is missing');
-    }
+    axios
+      .get('/api/configurations/default/blog')
+      .then(response => {
+        if (response.data) setBlogConfig(response.data);
+      })
+      .catch(error => {
+        console.error('Error loading blog config:', error);
+      });
   }
 };
 

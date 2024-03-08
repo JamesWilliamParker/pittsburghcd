@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 8080;
 
 // CSP Middleware
 const setCSPHeaders = (req, res, next) => {
-  res.setHeader('Content-Security-Policy', "default-src 'self' https://docs.google.com https://www.youtube.com 'unsafe-inline' 'unsafe-eval'; script-src 'self' https://www.youtube.com");
+  res.setHeader('Content-Security-Policy', "default-src 'self' https://docs.google.com https://www.youtube.com 'unsafe-inline' 'unsafe-eval'; script-src 'self' https://www.youtube.com; img-src 'self' *");
   next();
 };
 
