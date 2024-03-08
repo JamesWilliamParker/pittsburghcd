@@ -91,6 +91,7 @@
 .dynamic-blog {
   width: 350px;
   margin: 20px;
+  height: 625px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -120,6 +121,8 @@
 .dynamic-blog-summary {
   text-align: left;
   margin: 18px 0;
+  max-height: 100px;
+  overflow: hidden;
 }
 
 .selected-blog {
