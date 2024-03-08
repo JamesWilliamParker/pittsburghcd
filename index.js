@@ -14,10 +14,19 @@ const authRoutes = require('./routes/authRoutes');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+// CSP Middleware
+const setCSPHeaders = (req, res, next) => {
+  res.setHeader('Content-Security-Policy', "default-src 'self' https://docs.google.com https://www.youtube.com");
+  next();
+};
+
 // Configure CORS to allow same-origin requests only (To protect things a bit only requests from the same application host are allowed)
 const corsOptions = {
   origin: process.env.CORS_URL ? new RegExp(`/^${process.env.CORS_URL}:\d+$/`) : /^http:\/\/localhost:\d+$/, // Change this to match your own host
 };
+
+// Use CSP middleware
+app.use(setCSPHeaders);
 
 // Serve static React build files
 app.use(express.static(path.join(__dirname, 'client/dist')));
