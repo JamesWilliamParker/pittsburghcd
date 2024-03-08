@@ -21,7 +21,7 @@ const NavBar = () => {
 
         <Collapse isOpen={isOpen} navbar className="right-nav">
           <Nav className="me-auto" navbar>
-            <NavItem style={{ marginLeft: '20px', marginRight: '20px' }}>
+            <NavItem style={{ padding: '20px' }}>
               <NavLink href="/why">Why Choose Us</NavLink>
             </NavItem>
 

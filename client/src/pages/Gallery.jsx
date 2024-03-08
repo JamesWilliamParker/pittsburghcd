@@ -6,7 +6,7 @@ import { Button } from 'reactstrap';
 
 const Gallery = () => {
   return (
-    <div>
+    <div className="page-container">
       {/* The ServiceVideoCard */}
       <ServiceVideoCard videoId="0Huazog37Qs" header="Discover the beauty of a perfectly organized home." description="The perfect combination of Quality & Beauty, tailored to your style and budget!" />
 

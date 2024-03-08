@@ -17,7 +17,7 @@ export default function Blog() {
   const { title, dynamic } = blogConfig;
 
   return (
-    <>
+    <div className="page-container">
       <Banner text={title.toUpperCase()} width="100%" backgroundColor="#9f6f81" />
       <div className="page">
         <div className="blog-section">
@@ -58,6 +58,6 @@ export default function Blog() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

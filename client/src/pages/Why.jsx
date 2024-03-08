@@ -43,7 +43,7 @@ const Why = () => {
   ];
 
   return (
-    <div>
+    <div className="page-container">
       {/* Other content on your WhyPage */}
 
       {/* Example usage of ServiceCard2 */}
@@ -67,13 +67,7 @@ const Why = () => {
             <div className="about-cards-row">
               {cards.map(card => {
                 return (
-                  <Card
-                    className="my-2 about-cards"
-                    color="dark"
-                    outline
-
-                    key={title + card.title}
-                  >
+                  <Card className="my-2 about-cards" color="dark" outline key={title + card.title}>
                     <CardBody>
                       <CardTitle tag="h5">{card.title}</CardTitle>
                       <CardText>{card.body}</CardText>

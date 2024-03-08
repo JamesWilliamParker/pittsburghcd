@@ -6,7 +6,7 @@ import service_image_6 from '../assets/service_image_6.jpg';
 
 const Entryway = () => {
   return (
-    <div>
+    <div className="page-container">
       <Banner
         text="No pushy sales tactics. No phony discounts. No inflated prices. Simply a pleasurable experience with trustworthy experts!"
         width="100%"

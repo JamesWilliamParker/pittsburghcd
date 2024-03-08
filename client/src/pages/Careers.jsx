@@ -4,7 +4,7 @@ import HouseLogo from "../assets/footer_logo_image.png";
 
 const Careers = () => {
   return (
-    <Container>
+    <Container className="page-container">
       <Row>
         <Col>
           <h1 className="text-center pt-4">Join Our Team</h1>
