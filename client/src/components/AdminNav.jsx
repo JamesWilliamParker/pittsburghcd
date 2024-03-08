@@ -3,7 +3,7 @@ import { Navbar, Nav, NavItem, NavLink } from 'reactstrap';
 const NavBar = () => {
   return (
     <>
-      <Navbar expand="lg" className="app-nav" style={{ borderBottom: '1px solid #ccc' }}>
+      <Navbar expand="lg" className="app-nav admin" style={{ borderBottom: '1px solid #ccc' }}>
         <Nav className="me-auto" navbar>
           <NavItem style={{ marginLeft: '20px', marginRight: '20px' }}>
             <NavLink href="/register">Register New Users</NavLink>

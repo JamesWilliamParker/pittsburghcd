@@ -3,7 +3,7 @@ import Markdown from 'react-markdown';
 
 function Privacy() {
   return (
-    <Container className="mt-5">
+    <Container className="page-container">
       <Markdown className="privacy">
         {`
 # Privacy Policy For Pittsburgh Doors And Closets

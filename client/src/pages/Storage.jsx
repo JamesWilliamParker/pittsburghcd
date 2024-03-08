@@ -9,7 +9,7 @@ import service_image_12 from "../assets/service_image_12.jpg";
 
 const StorageSolutions = () => {
   return (
-    <div>
+    <div className="page-container">
       <Banner
         text="No pushy sales tactics. No phony discounts. No inflated prices. Simply a pleasurable experience with trustworthy experts!"
         width="100%"

@@ -7,7 +7,7 @@ import service_image_9 from "../assets/service_image_9.jpg";
 
 const LivingSpaces = () => {
   return (
-    <div>
+    <div className="page-container">
       <Banner
         text="No pushy sales tactics. No phony discounts. No inflated prices. Simply a pleasurable experience with trustworthy experts!"
         width="100%"

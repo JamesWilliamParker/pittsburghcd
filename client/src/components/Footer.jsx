@@ -1,9 +1,10 @@
 import logo from '../assets/footer_logo_image.png';
+import { Col, Row } from 'reactstrap';
 
 const Footer = () => {
   return (
-    <>
-      <footer className="footer" style={{ borderTop: '1px solid #ccc', paddingTop: '50px' }}>
+    <div className="footer-container">
+      <footer className="footer">
         <div className="footer-column">
           <img src={logo} alt="Logo" style={{ width: '15%', height: 'auto' }} />
           <div className="footer-content">
@@ -52,8 +53,14 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <p>Copyright 2024</p>
-    </>
+      <Row>
+        <Col>
+          <div>
+            <p>Copyright 2024</p>
+          </div>
+        </Col>
+      </Row>
+    </div>
   );
 };
 
