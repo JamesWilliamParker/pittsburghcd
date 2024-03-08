@@ -11,8 +11,6 @@ export default function Blog() {
 
   useEffect(() => loadBlogConfig({ blogConfig, setBlogConfig }), [blogConfig, setBlogConfig]);
 
-  console.log({ blogConfig });
-
   // destructuring the contents of the blog configuration obtained from the server
   if (!blogConfig) return null;
 
