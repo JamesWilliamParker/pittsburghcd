@@ -18,10 +18,9 @@ export default function Blog() {
 
   return (
     <div className="page-container">
-      <Banner text={title.toUpperCase()} width="100%" backgroundColor="#9f6f81" />
-      <div className="page">
+      <Banner text={dynamic?.sectionTitle} width="100%" backgroundColor="#9f6f81" />
+      <div className="blog">
         <div className="blog-section">
-          <h2>{dynamic?.sectionTitle}</h2>
           <div className="dynamic-blog-section">
             {selectedBlogConfig ? (
               <div className="selected-blog">
