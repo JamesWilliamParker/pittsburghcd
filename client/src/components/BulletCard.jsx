@@ -1,14 +1,4 @@
 const BulletCard = ({ leftHeader, centerHeader, rightHeader, fontSize, color, lineColor }) => {
-  const cardStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    padding: '1rem',
-    listStyleType: 'none', // Remove default list styles
-    paddingLeft: '0', // Remove default left padding for list items
-    maxWidth: '1200px',
-    margin: '0 auto',
-  };
-
   const headerStyle = {
     fontSize: fontSize,
     color: color,
