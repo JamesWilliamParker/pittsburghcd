@@ -29,7 +29,7 @@ export const loadBlogConfig = ({ blogConfig, setBlogConfig }) => {
   }
 };
 
-export const updateBlogConfig = ({ blogConfig, callback }) => {
+export const updateBlogConfig = ({ blogConfig, callback, setNewErrorMessage }) => {
   if (blogConfig) {
     const token = localStorage.getItem('token');
     if (token) {
@@ -47,6 +47,9 @@ export const updateBlogConfig = ({ blogConfig, callback }) => {
           if (response.data) callback(blogConfig);
         })
         .catch(error => {
+          if (error?.response?.data?.message) {
+            setNewErrorMessage(error.response.data.message);
+          }
           console.error('Error updating blog config:', error);
         });
     } else {

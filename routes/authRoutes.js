@@ -47,7 +47,7 @@ router.post('/register', authenticateToken, async (req, res) => {
     fs.writeFileSync(path.join(__dirname, '../storage/auth.json'), JSON.stringify(userData));
 
     // Generate JWT
-    const token = jwt.sign({ username }, secret, { expiresIn: '1h' });
+    const token = jwt.sign({ username }, secret, { expiresIn: '2h' });
 
     // Return JWT
     res.json({ token });
@@ -80,7 +80,7 @@ router.post('/login', async (req, res) => {
     }
 
     // Generate JWT
-    const token = jwt.sign({ username }, secret, { expiresIn: '1h' });
+    const token = jwt.sign({ username }, secret, { expiresIn: '2h' });
 
     // Return JWT
     res.json({ token });

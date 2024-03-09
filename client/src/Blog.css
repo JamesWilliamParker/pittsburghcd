@@ -65,11 +65,6 @@
   /* box-shadow: 0px 5px 18px #0004; */
 }
 
-.blog-section h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
 .blog-section input {
   margin: 20px 0px;
 }
@@ -137,6 +132,13 @@
   justify-content: space-between;
 }
 
+.blog-config-button-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .right-col {
   display: flex;
   flex-direction: row;
@@ -162,6 +164,11 @@
 }
 
 .markdown {
-  text-align: left;
-  padding: 20px;
+  text-align: justify;
+  padding: 4rem;
+}
+
+.blog-button-row {
+  display: flex;
+  align-items: flex-end;
 }
