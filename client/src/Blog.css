@@ -172,3 +172,13 @@
   display: flex;
   align-items: flex-end;
 }
+
+@media screen and (max-width: 600px) {
+  .markdown {
+    padding: 0;
+  }
+
+  .dynamic-blog-section {
+    padding: 1rem;
+  }
+}

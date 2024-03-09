@@ -164,7 +164,7 @@ function BlogConfiguration() {
         </div>
         <div className="divider"></div>
         <p>Preview of Blog Body Markdown:</p>
-        <Row sm="12" className="markdown" noGutters>
+        <Row sm="12" className="blog-row markdown" noGutters>
           <Markdown>{newBlogBody}</Markdown>
         </Row>
       </div>

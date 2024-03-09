@@ -24,13 +24,12 @@ export default function Blog() {
         <div className="dynamic-blog-section">
           {selectedBlogConfig ? (
             <div className="selected-blog">
-              <Row sm="12" className="service-card" noGutters>
-                <Col sm="12" md="6">
-                  <h3 className="service-header">{selectedBlogConfig.blogTitle}</h3>
+              <Row sm="12" noGutters>
+                <Col sm="12">
+                  <img src={selectedBlogConfig.blogImage} alt={`Image of ${selectedBlogConfig.blogTitle}`} className="main-blog-image" />
                 </Col>
-
-                <Col sm="12" md="6">
-                  <img src={selectedBlogConfig.blogImage} alt={`Image of ${selectedBlogConfig.blogTitle}`} className="service-image-col" />
+                <Col sm="12">
+                  <h3 className="service-header">{selectedBlogConfig.blogTitle}</h3>
                 </Col>
               </Row>
               <Row sm="12" className="blog-row markdown" noGutters>
