@@ -4,8 +4,8 @@ import HouseLogo from '../assets/footer_logo_image.png';
 
 const Careers = () => {
   return (
-    <Container className="page-container">
-      <Row>
+    <Container sm="12" className="page-container">
+      <Row sm="12" className="p-4">
         <Col>
           <h1 className="text-center pt-4">Join Our Team</h1>
           <img src={HouseLogo} alt="Careers Image" className="img-fluid d-block mx-auto mt-4" style={{ maxWidth: '200px' }} />
