@@ -51,6 +51,7 @@ const Why = () => {
         description="Each and every project is tailored to your space, style, and budget, ensuring a unique and efficient solution. Our customer-centric experience includes a meet & greet consultation, 3D designs, showroom displays, and most importantly, over three decades installation experience. 
 We firmly believe in being customer-focused, less 'promotional' without tactics and questionable discounts. The result has made us a TRUSTED partner in home storage improvement throughout the Greater Pittsburgh Region. Overall, we are the most experienced, customer service-oriented in the industry. We will prove it from the moment we meet!"
       />
+
       <div
         style={{
           textAlign: "center",
