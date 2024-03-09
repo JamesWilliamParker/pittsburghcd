@@ -1,6 +1,6 @@
 import Carousel from '../components/Carousel';
 import ReviewCard from '../components/ReviewCard';
-import { Button } from 'reactstrap';
+import { Button, Row } from 'reactstrap';
 
 const Home = () => {
   // Manually set data for three cards *Review Cards*
@@ -27,26 +27,19 @@ const Home = () => {
   return (
     <div style={{ minHeight: '100vh' }}>
       <Carousel />
+      <Row className="mt-4 p-5 justify-text">
+        We are a Pittsburgh-based company passionate about transforming homes with custom designed whole-home storage options and doors. Our mission is simple: To deliver personalized, innovative organized spaces and door solutions with quality craftsmanship and unmatched customer service, while
+        enhancing the beauty and functionality of every Greater Pittsburgh Area home.
+      </Row>
+      <Button size="lg" className="service-button" href="/consultation">
+        Free Design Consultation
+      </Button>
       <div className="card-container mt-5">
         {cardsData.map((data, index) => (
           <ReviewCard key={index} {...data} />
         ))}
       </div>
-      <Button
-        className="service-button"
-        style={{
-          backgroundColor: '#179d97',
-          color: 'white',
-          padding: '20px 30px', // Changes Button Size
-          marginTop: '170px',
-          marginBottom: '90px', // Add margin to the bottom of the button
-          fontSize: '30px',
-          transition: 'background-color 0.3s', // Smooth transition
-        }}
-        href="/consultation"
-        onMouseOver={e => (e.target.style.backgroundColor = '#9f6f81')}
-        onMouseOut={e => (e.target.style.backgroundColor = '#179d97')}
-      >
+      <Button className="service-button mb-5" size="lg" href="/consultation">
         Free Design Consultation
       </Button>
     </div>
