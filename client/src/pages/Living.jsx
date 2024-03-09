@@ -3,7 +3,7 @@ import ServiceCard from "../components/ServiceCard";
 
 // Import your images
 import service_image_8 from "../assets/service_image_8.jpg";
-import service_image_9 from "../assets/service_image_9.jpg";
+import service_image_17 from "../assets/service_image_17.jpg";
 
 const LivingSpaces = () => {
   return (
@@ -29,7 +29,7 @@ const LivingSpaces = () => {
         />
 
         <ServiceCard
-          image={service_image_9}
+          image={service_image_17}
           header="Entertainment Centers"
           description="Bringing style and function to your home's entertainment spaces."
         />
