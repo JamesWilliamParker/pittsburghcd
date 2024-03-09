@@ -6,6 +6,10 @@ const NavBar = () => {
       <Navbar expand="lg" className="app-nav admin" style={{ borderBottom: '1px solid #ccc' }}>
         <Nav className="me-auto" navbar>
           <NavItem style={{ marginLeft: '20px', marginRight: '20px' }}>
+            <NavLink href="/login">Log In</NavLink>
+          </NavItem>
+
+          <NavItem style={{ marginLeft: '20px', marginRight: '20px' }}>
             <NavLink href="/register">Register New Users</NavLink>
           </NavItem>
 

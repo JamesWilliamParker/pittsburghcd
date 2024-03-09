@@ -23,20 +23,22 @@ export default function LogIn() {
   };
 
   return (
-    <div className="page">
-      <div className="spacer"></div>
-      <h2>LOG IN</h2>
-      <form onSubmit={handleSubmit}>
-        <FormGroup className="login-form">
-          <Input type="email" name="username" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} />
-          <Input type="password" name="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-          {error && <div style={{ color: 'red' }}>{error}</div>}
-          <Button className="service-button" color="primary" type="submit">
-            Log In
-          </Button>
-        </FormGroup>
-      </form>
-      <p>{`Don't have an account? Ask your administrator to Create one for you.`}</p>
+    <div className="page-container">
+      <div className="page">
+        <div className="spacer"></div>
+        <h2>LOG IN</h2>
+        <form onSubmit={handleSubmit}>
+          <FormGroup className="login-form">
+            <Input type="email" name="username" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} />
+            <Input type="password" name="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
+            {error && <div style={{ color: 'red' }}>{error}</div>}
+            <Button className="service-button" color="primary" type="submit">
+              Log In
+            </Button>
+          </FormGroup>
+        </form>
+        <p>{`Don't have an account? Ask your administrator to Create one for you.`}</p>
+      </div>
     </div>
   );
 }
