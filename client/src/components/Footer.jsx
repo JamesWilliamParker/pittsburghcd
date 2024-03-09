@@ -20,12 +20,12 @@ const Footer = () => {
           <div className="footer-header">Social Media</div>
           <div className="footer-content">
             <p>
-              <a href="https://www.facebook.com/profile.php?id=61556068557103" style={{ color: '#874c62' }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61556068557103" style={{ color: '#874c62' }}>
                 Facebook
               </a>
             </p>
             <p>
-              <a href="https://www.instagram.com/pittsburghclosetsanddoors/" style={{ color: '#874c62' }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pittsburghclosetsanddoors/" style={{ color: '#874c62' }}>
                 Instagram
               </a>
             </p>
