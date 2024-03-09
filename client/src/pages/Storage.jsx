@@ -3,7 +3,7 @@ import Banner from "../components/Banner";
 import ServiceCard from "../components/ServiceCard";
 
 // Import your images
-import service_image_10 from "../assets/service_image_10.jpg";
+import service_image_15 from "../assets/service_image_15.jpg";
 import service_image_11 from "../assets/service_image_11.jpg";
 import service_image_12 from "../assets/service_image_12.jpg";
 
@@ -18,7 +18,7 @@ const StorageSolutions = () => {
       />
       <div>
         <ServiceCard
-          image={service_image_10}
+          image={service_image_15}
           header="Laundry Area"
           description="Whites, colors, delicates……So many options!"
         />
