@@ -6,6 +6,18 @@
   overflow-x: hidden;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
+.flex-end-row {
+  justify-content: flex-end;
+}
+
+.flex-end-bottom {
+  align-items: flex-end;
+}
+
 .spacer {
   height: 2rem;
 }
@@ -101,6 +113,11 @@
   width: 30%;
   padding: 20px;
   border: 10px solid #9f6f81;
+}
+
+.career-link {
+  color: #9f6f81;
+  font-weight: 600;
 }
 
 /* The Footer */
@@ -348,6 +365,7 @@ hr {
   width: 100%;
   min-height: calc(100vh - 480px);
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 0 0 2rem 0;
 }
 
