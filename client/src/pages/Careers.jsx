@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import HouseLogo from '../assets/footer_logo_image.png';
+import OriginalLogo from '../assets/pcd_logo_v1.png';
 
 const Careers = () => {
   return (
@@ -8,7 +8,7 @@ const Careers = () => {
       <Row>
         <Col>
           <h1 className="text-center pt-4">Join Our Team</h1>
-          <img src={HouseLogo} alt="Careers Image" className="img-fluid d-block mx-auto mt-4" style={{ maxWidth: '200px' }} />
+          <img src={OriginalLogo} alt="Careers Image" className="img-fluid d-block mx-auto mt-4" style={{ maxWidth: '200px' }} />
 
           <p className="mt-4 justify-text">
             At Pittsburgh Closets and Doors, we're not just offering jobs; we're offering careers that make a difference. As a locally owned business, we pride ourselves on a family-like atmosphere where fairness, respect, and compensation are foundational principles. We understand that our strength
