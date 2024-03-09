@@ -10,6 +10,14 @@
   text-align: justify;
 }
 
+.flex-end-row {
+  justify-content: flex-end;
+}
+
+.flex-end-bottom {
+  align-items: flex-end;
+}
+
 .spacer {
   height: 2rem;
 }

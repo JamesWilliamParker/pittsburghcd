@@ -1,6 +1,7 @@
 import Carousel from '../components/Carousel';
 import ReviewCard from '../components/ReviewCard';
-import { Button, Row } from 'reactstrap';
+import { Button, Row, Col } from 'reactstrap';
+import HouseLogo from '../assets/footer_logo_image.png';
 
 const Home = () => {
   // Manually set data for three cards *Review Cards*
@@ -28,8 +29,24 @@ const Home = () => {
     <div style={{ minHeight: '100vh' }}>
       <Carousel />
       <Row className="mt-4 p-5 justify-text">
-        We are a Pittsburgh-based company passionate about transforming homes with custom designed whole-home storage options and doors. Our mission is simple: To deliver personalized, innovative organized spaces and door solutions with quality craftsmanship and unmatched customer service, while
-        enhancing the beauty and functionality of every Greater Pittsburgh Area home.
+        <Col sm="12" lg="8" className="offset-lg-1">
+          {/* Logo shows up when small screen atop the text */}
+          <Row sm="12" className="d-flex d-lg-none">
+            <img src={HouseLogo} alt="Careers Image" className="mx-auto" style={{ maxWidth: '200px' }} />
+          </Row>
+          <Row sm="12" className="mt-3">
+            {/* Logo shows up  when on larger screens next to the text*/}
+            <Col sm="12" lg="4" className="d-none d-lg-flex flex-end-row">
+              <img src={HouseLogo} alt="Careers Image" className="" style={{ maxWidth: '200px' }} />
+            </Col>
+            <Col sm="12" lg="8" className="d-flex flex-end-bottom">
+              <p>
+                We are a Pittsburgh-based company passionate about transforming homes with custom designed whole-home storage options and doors. Our mission is simple: To deliver personalized, innovative organized spaces and door solutions with quality craftsmanship and unmatched customer service,
+                while enhancing the beauty and functionality of every Greater Pittsburgh Area home.
+              </p>
+            </Col>
+          </Row>
+        </Col>
       </Row>
       <Button size="lg" className="service-button" href="/consultation">
         Free Design Consultation
