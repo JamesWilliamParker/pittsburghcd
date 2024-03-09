@@ -135,6 +135,7 @@ function BlogConfiguration() {
     <div className="page">
       <AdminNav />
       <h2>BLOG CONFIGURATION</h2>
+      
       <div className="blog-section">
         <h4>Complete this form and click Add New Blog, then your blog will be added to the top of the list.</h4>
         <Input type="text" value={newBlogTitle} onChange={e => setNewBlogTitle(e.target.value)} placeholder="New Blog Title" required />
