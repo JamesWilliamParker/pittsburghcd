@@ -16,7 +16,7 @@ const LivingSpaces = () => {
       />
       <div>
         <ServiceCard
-          image={service_image_8}
+          image={service_image_17}
           header="Built-Ins"
           description="Making your living area ALIVE!"
         />
@@ -29,7 +29,7 @@ const LivingSpaces = () => {
         />
 
         <ServiceCard
-          image={service_image_17}
+          image={service_image_8}
           header="Entertainment Centers"
           description="Bringing style and function to your home's entertainment spaces."
         />

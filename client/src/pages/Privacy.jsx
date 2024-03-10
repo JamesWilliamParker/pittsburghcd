@@ -1,5 +1,5 @@
-import { Container } from 'reactstrap';
-import Markdown from 'react-markdown';
+import { Container } from "reactstrap";
+import Markdown from "react-markdown";
 
 function Privacy() {
   return (
@@ -52,7 +52,7 @@ Service is used.
 Service or from the Service infrastructure itself (for example, the duration of a page
 visit).
 - **Website** refers to Pittsburgh Closets and Doors, accessible from
-https://pittsburghclosetsanddoors.com/
+https://pittdac.com/
 - **You or Customer** means the individual accessing or using the Service, or the
 company, or other legal entity on behalf of which such individual is accessing or using
 the Service, as applicable.
