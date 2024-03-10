@@ -14,6 +14,10 @@
   justify-content: flex-end;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .flex-end-bottom {
   align-items: flex-end;
 }
@@ -21,6 +25,19 @@
 .spacer {
   height: 2rem;
 }
+
+.home-about {
+  display: flex;
+  width: 100%;
+}
+
+.logo-image-bg {
+  width: 100%;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Nav. Bar */
 .navbar-nav .nav-link {
   font-size: 1.2rem; /* Adjust the size as needed */
@@ -80,7 +97,7 @@
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0; 0, 0, 0.5);
   border-radius: 20px;
   padding: 0 2rem;
 }
@@ -229,7 +246,7 @@
 
 .service-button {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #179d97;
   border: none;
   cursor: pointer;

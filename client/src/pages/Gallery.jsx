@@ -16,10 +16,6 @@ const Gallery = () => {
         centerHeader="Custom 3D Design & Visuals"
         rightHeader="Professional Installation by Our Team"
         fontSize="25px"
-        color="#333333"
-        marginLeft="360px"
-        marginRight="360px"
-        marginTop="100px"
         lineColor="#9f6f81" // Color of the lines
       />
 
@@ -29,20 +25,12 @@ const Gallery = () => {
       </div>
 
       {/* The Button */}
-      <div style={{ textAlign: 'center', marginTop: '100px' }}>
-        <Button
-          className="service-button"
-          style={{
-            backgroundColor: '#179d97',
-            color: 'white',
-            padding: '10px',
-          }}
-          size="lg"
-        >
-          <Link to="/consultation" style={{ textDecoration: 'none', color: 'white' }}>
+      <div className="mt-5">
+        <Link to="/consultation">
+          <Button className="service-button" size="lg">
             Free Design Consultation
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
     </div>
   );
