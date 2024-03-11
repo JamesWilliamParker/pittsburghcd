@@ -4,7 +4,7 @@ import ServiceCard from "../components/ServiceCard";
 // Import your images
 import service_image_3 from "../assets/service_image_3.jpg";
 import service_image_4 from "../assets/service_image_4.jpg";
-import service_image_5 from "../assets/service_image_5.jpg";
+import service_image_5v3 from "../assets/service_image_5v3.jpg";
 
 const Doors = () => {
   return (
@@ -43,7 +43,7 @@ const Doors = () => {
         />
 
         <ServiceCard
-          image={service_image_5}
+          image={service_image_5v3}
           header="Closet Doors"
           description="Fabulous style for every door in the home."
         />
