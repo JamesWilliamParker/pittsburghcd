@@ -53,7 +53,7 @@
   justify-content: flex-start;
   position: fixed;
   z-index: 999;
-  background-color: white;
+  background-color: #f7ddcf;
 }
 
 .admin {
@@ -85,7 +85,6 @@
 }
 
 /* Carousel Homepage but also changes Carousel-Gallery */
-/* DON'T TOUCH */
 
 .carousel-item {
   background-color: black;
@@ -93,7 +92,7 @@
 .carousel-image {
   width: 100%;
   height: auto;
-  opacity: 80%;
+  opacity: 90%;
 }
 
 .carousel-caption {
@@ -146,7 +145,7 @@
 }
 
 .footer-container {
-  background-color: white;
+  background-color: #f7ddcf;
 }
 
 .footer-column {
@@ -171,7 +170,7 @@
 /* Drop Down Nav Bar Hover Color */
 
 .dropdown-item:hover {
-  background-color: #9f6f81; /* Change this to the desired hover color */
+  background-color: #f7ddcf; /* Change this to the desired hover color */
   color: #212529; /* Change this to the desired text color */
 }
 
@@ -250,11 +249,11 @@
   background-color: #179d97;
   border: none;
   cursor: pointer;
-}
+  }
 
 /* This is the free consultation button for the ServiceCard*/
 .service-button:hover {
-  background-color: #9f6f81 !important;
+  background-color: #4fc3b9 !important;
 }
 
 /* Gallery service-video-card Logic */
