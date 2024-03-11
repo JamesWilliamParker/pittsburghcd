@@ -4,12 +4,12 @@ import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCa
 // Carousel Photo Import
 
 import homeCarouselPhoto1v2 from '../assets/homepage_carousel_photo1v2.jpg';
-import homeCarouselPhoto2 from '../assets/homepage_carousel_photo2.jpg';
-import homeCarouselPhoto3 from '../assets/homepage_carousel_photo3.jpg';
-import homeCarouselPhoto4 from '../assets/homepage_carousel_photo4.jpg';
+import homeCarouselPhoto2v2 from '../assets/homepage_carousel_photo2v2.jpg';
+import homeCarouselPhoto3v2 from '../assets/homepage_carousel_photo3v2.jpg';
+import homeCarouselPhoto4v2 from '../assets/homepage_carousel_photo4v2.jpg';
 import homeCarouselPhoto5 from '../assets/homepage_carousel_photo5.jpg';
-import homeCarouselPhoto6 from '../assets/homepage_carousel_photo6.jpg';
-import homeCarouselPhoto7 from '../assets/homepage_carousel_photo7.jpg';
+import homeCarouselPhoto6v2 from '../assets/homepage_carousel_photo6v2.jpg';
+import homeCarouselPhoto7v2 from '../assets/homepage_carousel_photo7v2.jpg';
 
 // Carousel Photo Logic
 
@@ -22,14 +22,14 @@ const items = [
     key: 1,
   },
   {
-    src: homeCarouselPhoto2,
+    src: homeCarouselPhoto2v2,
     header: 'Doors',
     altText: 'Photo of doors',
     caption: 'Transform the entire look of your home, with dozens of doors styles to choose from!',
     key: 2,
   },
   {
-    src: homeCarouselPhoto3,
+    src: homeCarouselPhoto3v2,
     header: 'Living Spaces',
     altText: 'Photo of a living room',
     caption: 'Amazing built-ins for every living space!',
@@ -37,7 +37,7 @@ const items = [
   },
 
   {
-    src: homeCarouselPhoto4,
+    src: homeCarouselPhoto4v2,
     header: 'Entryways',
     altText: 'Photo of an entryway',
     caption: 'Entryways that will make you smile!',
@@ -53,7 +53,7 @@ const items = [
   },
 
   {
-    src: homeCarouselPhoto6,
+    src: homeCarouselPhoto6v2,
     header: 'Workspaces',
     altText: 'Photo of an office',
     caption: 'Home offices set up for success!',
@@ -61,7 +61,7 @@ const items = [
   },
 
   {
-    src: homeCarouselPhoto7,
+    src: homeCarouselPhoto7v2,
     header: 'Storage Solutions',
     altText: 'Photo of custom storage unit',
     caption: 'Your dream Pantry, Laundry Area or Murphy Bed!',
