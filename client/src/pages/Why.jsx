@@ -18,12 +18,12 @@ const Why = () => {
         },
         {
           title: "Unmatched Professional Installation",
-          body: "We are fortunate to have an installation team with over three decades of specialized experience in our industry. This expertise is crucial and sets us apart in the entire process.",
+          body: "Our installation team has over three decades of specialized experience in our industry. This expertise is crucial and sets us apart in the entire process.",
         },
       ],
     },
     {
-      title: "Much more than just a project",
+      title: "More Than Just a Project",
       cards: [
         {
           title: "Great Relationships",
