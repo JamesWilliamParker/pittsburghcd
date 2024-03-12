@@ -14,11 +14,11 @@ const Why = () => {
         },
         {
           title: "Showroom Visuals & Options",
-          body: "Customers typically need a “visual” sense of their custom design/ Our showroom satisfies that by providing colors, accessories, door styles, and more.",
+          body: "Customers often seek a visual representation of their custom design. Our showroom offers a comprehensive display of colors, accessories, door styles, and more to fulfill this need!",
         },
         {
           title: "Unmatched Professional Installation",
-          body: "We’re lucky enough to have an install team with over three decades of experience. And, the experience is specific to our industry, which may be the most important aspect of the entire process.",
+          body: "We are fortunate to have an installation team with over three decades of specialized experience in our industry. This expertise is crucial and sets us apart in the entire process.",
         },
       ],
     },
@@ -43,10 +43,9 @@ const Why = () => {
 
   const descriptionComponent = (
     <>
-      <p>{`Each and every project is tailored to your space, style, and budget, ensuring a unique and efficient solution. Our customer-centric experience includes a meet & greet consultation, 3D designs, showroom displays, and most importantly, over three decades installation experience.`}</p>
+      <p>{`Every project is meticulously customized to suit your space, style, and budget, guaranteeing a distinctive and effective solution. Our customer-centric approach includes a personalized consultation, detailed 3D designs, captivating showroom displays, and, crucially, over three decades of installation expertise.`}</p>
       <p>
-        {`We firmly believe in being more customer-focused, less 'promotional' without tactics and questionable discounts. The result has made us a TRUSTED partner in home storage improvement throughout the Greater Pittsburgh Region. Overall, we are the most experienced, customer service-oriented in the
-        industry. We will prove it from the moment we meet!`}
+        {`We prioritize a customer-focused ethos over promotional gimmicks and dubious discounts. This commitment has earned us the trust of homeowners seeking superior home storage solutions across the Greater Pittsburgh Region. We pride ourselves on being the most experienced and service-oriented company in the industry, a reputation we are eager to demonstrate from our very first meeting.`}
       </p>
     </>
   );
