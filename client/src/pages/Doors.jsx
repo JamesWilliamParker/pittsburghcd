@@ -3,7 +3,7 @@ import ServiceCard from "../components/ServiceCard";
 
 // Import your images
 import service_image_3v2 from "../assets/service_image_3v2.jpg";
-import service_image_4 from "../assets/service_image_4.jpg";
+import service_image_4v2 from "../assets/service_image_4v2.jpg";
 import service_image_5v3 from "../assets/service_image_5v3.jpg";
 
 const Doors = () => {
@@ -30,8 +30,8 @@ const Doors = () => {
         />
 
         <ServiceCard
-          image={service_image_4}
-          header="Exterior Doors"
+          image={service_image_4v2}
+          header="Barn & Exterior Doors"
           description="Styles & price points for every home makeover."
         />
 

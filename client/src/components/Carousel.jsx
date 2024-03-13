@@ -5,11 +5,11 @@ import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCa
 
 import homeCarouselPhoto1v2 from '../assets/homepage_carousel_photo1v2.jpg';
 import homeCarouselPhoto2v2 from '../assets/homepage_carousel_photo2v2.jpg';
-import homeCarouselPhoto3v2 from '../assets/homepage_carousel_photo3v2.jpg';
+import homeCarouselPhoto17 from "../assets/service_image_17.jpg";
 import homeCarouselPhoto4v2 from '../assets/homepage_carousel_photo4v2.jpg';
 import homeCarouselPhoto5 from '../assets/homepage_carousel_photo5.jpg';
 import homeCarouselPhoto6v2 from '../assets/homepage_carousel_photo6v2.jpg';
-import homeCarouselPhoto7v2 from '../assets/homepage_carousel_photo7v2.jpg';
+import homeCarouselPhoto7v3 from '../assets/homepage_carousel_photo7v3.jpg';
 
 // Carousel Photo Logic
 
@@ -29,7 +29,7 @@ const items = [
     key: 2,
   },
   {
-    src: homeCarouselPhoto3v2,
+    src: homeCarouselPhoto17,
     header: 'Living Spaces',
     altText: 'Photo of a living room',
     caption: 'Amazing built-ins for every living space!',
@@ -61,7 +61,7 @@ const items = [
   },
 
   {
-    src: homeCarouselPhoto7v2,
+    src: homeCarouselPhoto7v3,
     header: 'Storage Solutions',
     altText: 'Photo of custom storage unit',
     caption: 'Your dream Pantry, Laundry Area or Murphy Bed!',

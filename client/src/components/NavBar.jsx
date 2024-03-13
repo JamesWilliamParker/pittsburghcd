@@ -1,9 +1,23 @@
-import { Outlet } from 'react-router-dom';
-import { useState } from 'react';
-import { Button, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
+import { Outlet } from "react-router-dom";
+import { useState } from "react";
+import {
+  Button,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText,
+} from "reactstrap";
 
-import Footer from './Footer';
-import logoV1 from '../assets/pcd_logo_v1.png';
+import Footer from "./Footer";
+import logoV1 from "../assets/pcd_logo_v1.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,16 +26,25 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="app-nav" style={{ borderBottom: '1px solid #ccc' }}>
+      <Navbar
+        expand="lg"
+        className="app-nav"
+        style={{ borderBottom: "1px solid #ccc" }}
+      >
         <NavbarBrand href="/">
-          <img src={logoV1} className="nav-logo" alt="Pittsburgh Doors & Closets Logo" style={{ width: '220px', height: 'auto' }} />
+          <img
+            src={logoV1}
+            className="nav-logo"
+            alt="Pittsburgh Doors & Closets Logo"
+            style={{ width: "220px", height: "auto" }}
+          />
         </NavbarBrand>
 
         <NavbarToggler onClick={toggle} />
 
         <Collapse isOpen={isOpen} navbar className="right-nav">
           <Nav className="me-auto" navbar>
-            <NavItem style={{ padding: '20px' }}>
+            <NavItem className="me-4">
               <NavLink href="/why">Why Choose Us</NavLink>
             </NavItem>
 
@@ -60,20 +83,20 @@ const NavBar = () => {
               </DropdownMenu>
             </UncontrolledDropdown>
 
-            <NavItem style={{ marginLeft: '20px', marginRight: '1px' }}>
+            <NavItem style={{ marginLeft: "20px", marginRight: "1px" }}>
               <NavLink href="/gallery">Gallery</NavLink>
             </NavItem>
 
-            <NavItem style={{ marginLeft: '20px', marginRight: '5px' }}>
+            <NavItem style={{ marginLeft: "20px", marginRight: "5px" }}>
               <NavLink href="/blog">Blog</NavLink>
             </NavItem>
 
             <NavbarText
               className="phone-number"
               style={{
-                marginRight: '30px',
-                marginLeft: '20px',
-                fontSize: '1.2rem',
+                marginRight: "30px",
+                marginLeft: "20px",
+                fontSize: "1.2rem",
               }}
             >
               Call (724) 201-6421
@@ -84,12 +107,12 @@ const NavBar = () => {
             <Button
               className="service-button"
               style={{
-                backgroundColor: '#179d97',
-                color: 'white',
-                padding: '1px 1px',
+                backgroundColor: "#179d97",
+                color: "white",
+                padding: "1px 1px",
               }}
             >
-              <NavLink style={{ color: 'white' }} href="/consultation">
+              <NavLink style={{ color: "white" }} href="/consultation">
                 Free Design Consultation
               </NavLink>
             </Button>
