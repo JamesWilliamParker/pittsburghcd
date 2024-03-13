@@ -43,9 +43,32 @@ const Why = () => {
 
   const descriptionComponent = (
     <>
-      <p>{`Every project is meticulously customized to suit your space, style, and budget, guaranteeing a distinctive and effective solution. Our customer-centric approach includes a personalized consultation, detailed 3D designs, captivating showroom displays, and, crucially, over three decades of installation expertise.`}</p>
-      <p>
-        {`We prioritize a customer-focused ethos over promotional gimmicks and dubious discounts. This commitment has earned us the trust of homeowners seeking superior home storage solutions across the Greater Pittsburgh Region. We pride ourselves on being the most experienced and service-oriented company in the industry, a reputation we are eager to demonstrate from our very first meeting.`}
+      <p
+        style={{
+          textJustify: "inter-word",
+          lineHeight: "1.6",
+          wordSpacing: "-0.08em",
+        }}
+      >
+        Every project is meticulously customized to suit your space, style, and
+        budget, guaranteeing a distinctive and effective solution. Our
+        customer-centric approach includes a personalized consultation, detailed
+        3D designs, captivating showroom displays, and, crucially, over three
+        decades of installation expertise.
+      </p>
+      <p
+        style={{
+          textJustify: "inter-word",
+          lineHeight: "1.6",
+          wordSpacing: "-0.08em",
+        }}
+      >
+        We prioritize a customer-focused ethos over promotional gimmicks and
+        dubious discounts. This commitment has earned us the trust of homeowners
+        seeking superior home storage solutions across the Greater Pittsburgh
+        Region. We pride ourselves on being the most experienced and
+        service-oriented company in the industry, a reputation we are eager to
+        demonstrate from our very first meeting.
       </p>
     </>
   );
