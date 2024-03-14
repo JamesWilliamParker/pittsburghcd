@@ -1,4 +1,4 @@
-import starFilled from '../assets/star-filled.png';
+import starFilled from "../assets/star-filled.png";
 
 const ReviewCard = ({ authorName, rating, feedback }) => {
   return (
@@ -6,10 +6,15 @@ const ReviewCard = ({ authorName, rating, feedback }) => {
       <h3>{authorName}</h3>
       <div className="rating">
         {[...Array(rating)].map((_, index) => (
-          <img key={index} src={starFilled} alt="filled star" />
+          <img
+            key={index}
+            src={starFilled}
+            alt="filled star"
+            style={{ width: "40px", height: "40px" }}
+          />
         ))}
       </div>
-      <p style={{ fontSize: '19px', textAlign: 'left' }}>{feedback}</p>
+      <p style={{ fontSize: "19px", textAlign: "left" }}>{feedback}</p>
     </div>
   );
 };

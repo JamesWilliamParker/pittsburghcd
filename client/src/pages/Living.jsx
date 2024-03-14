@@ -3,7 +3,7 @@ import ServiceCard from "../components/ServiceCard";
 
 // Import your images
 import service_image_8 from "../assets/service_image_8.jpg";
-import service_image_3v2 from "../assets/service_image_3v2.jpg";
+import service_image_18 from "../assets/service_image_18.jpg";
 
 const LivingSpaces = () => {
   return (
@@ -16,7 +16,7 @@ const LivingSpaces = () => {
       />
       <div>
         <ServiceCard
-          image={service_image_3v2}
+          image={service_image_18}
           header="Built-Ins"
           description="Making your living area ALIVE!"
         />
