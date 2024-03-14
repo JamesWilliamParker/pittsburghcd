@@ -3,7 +3,7 @@ import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCa
 
 // Carousel Photo Import
 
-import homeCarouselPhoto1v2 from '../assets/homepage_carousel_photo1v2.jpg';
+import homeCarouselPhoto1 from '../assets/homepage_carousel_photo1.jpg';
 import homeCarouselPhoto2v2 from '../assets/homepage_carousel_photo2v2.jpg';
 import homeCarouselPhoto17 from "../assets/service_image_17.jpg";
 import homeCarouselPhoto4v2 from '../assets/homepage_carousel_photo4v2.jpg';
@@ -15,7 +15,7 @@ import homeCarouselPhoto7v3 from '../assets/homepage_carousel_photo7v3.jpg';
 
 const items = [
   {
-    src: homeCarouselPhoto1v2,
+    src: homeCarouselPhoto1,
     header: 'Closets',
     altText: 'Photo of closet',
     caption: 'Closets you’ll love, for any style and budget!',
