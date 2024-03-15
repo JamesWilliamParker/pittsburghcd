@@ -57,3 +57,10 @@ At this point your project is both installed and the client is built so that it 
 - Make sure you're on "Response" and you will see the json code. Copy that code.
 - Then go to blog.json and replace/paste the code in there. You will find blog.json under configs\stored\default
 - Then push to github, then deploy.
+
+## Github Push Commands
+
+- git add .
+- git status
+- git commit -m ""
+- git push origin HEAD
