@@ -49,3 +49,11 @@ At this point your project is both installed and the client is built so that it 
 - Admin logs in, then goes to /register, then types new accounts email and password.
 - The account password cannot be recovered.
 - Accounts can only be deleted in the `storage/auth.json`.
+
+## Backing Up Blogs
+
+- First, go to the homepage and inspect. Then click Network, then click clear network log.
+- Next, go to /blog and you will see blog xhr type, click that.
+- Make sure you're on "Response" and you will see the json code. Copy that code.
+- Then go to blog.json and replace/paste the code in there. You will find blog.json under configs\stored\default
+- Then push to github, then deploy.
