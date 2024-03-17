@@ -1,1 +1,20 @@
-{"title":"","fixed":{"sectionOneTitle":"Title for the first static section on the blog","sectionTwoTitle":"Title for the second static section on the blog","sectionThreeTitle":"Title for the third static section on the blog"},"dynamic":{"sectionTitle":"Pittsburgh Doors & Closets Blogs","blogsList":[]},"id":"default"}
+{
+  "title": "",
+  "fixed": {
+    "sectionOneTitle": "Title for the first static section on the blog",
+    "sectionTwoTitle": "Title for the second static section on the blog",
+    "sectionThreeTitle": "Title for the third static section on the blog"
+  },
+  "dynamic": {
+    "sectionTitle": "Pittsburgh Doors & Closets Blogs",
+    "blogsList": [
+      {
+        "blogTitle": "Home Storage & Organization: Why Go Custom?",
+        "blogSummary": "In a world where homes are increasingly becoming a reflection of personal tastes and lifestyles, the one-size-fits-all approach just doesn't cut it...",
+        "blogImage": "https://res.cloudinary.com/dh46vzv62/image/upload/v1710688250/download_tfoqob.png",
+        "blogBody": "Personalization and Style  \nThere simply aren't enough \"off the shelf\" options to satisfy everyone's personal style, home decor, and functionality needs. Too many couples walk into a big box store and settle for one of the few options all other shoppers also walked out the door with. From sleek, modern designs to classic, elegant looks, custom storage solutions allow you to craft spaces that resonate with your personal style, and storage needs. Design, door style, color, hardware finish, height, width, depth, color, accessories, should be chosen by YOU, not the retailer. \n \nMaximizing Space  \nPittsburgh homes, with their diverse architectural styles, often come with unique spatial challenges that simply cannot be solved using a \"store bought\" approach.  Custom solutions are designed to make the most of every inch, turning awkward corners and oddly sized areas into functional assets.\n \nQuality You Can Trust  \nBelieve in the power of quality, it provides value, to your life, and to your home. Closets, built-ins, cabinets, and solid core doors should be built to last, using materials that not only look good but also stand the test of time. That quality is sometimes difficult to achieve out of a box, or built from weak thin materials. With a keen eye for detail, a true craftsman ensures that every hinge, handle, and panel is well-constructed, with longevity in mind.\n \nJoin the Custom Revolution  \nReady to redefine your space? Contact us today to schedule a free consultation. Let's work together to create a home that's uniquely yours, one closet space and/or door at a time. Our design process begins with you. Whether you have a clear vision or are looking for guidance, our team works closely with you to bring your ideas to life\n\nWhether you call on us here at Pittsburgh Doors & Closets, or another custom shop, we hope you enjoyed this glimpse into the world of why custom is the way to go. Stay tuned for more insights, tips, and stories from our clients' homes in Pittsburgh. Let's make every space in your home a masterpiece!  \n\nThe Pittsburgh Doors & Closets Team\n"
+      }
+    ]
+  },
+  "id": "default"
+}
