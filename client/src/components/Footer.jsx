@@ -9,7 +9,7 @@ const Footer = () => {
           <img src={logo} alt="Logo" style={{ width: "35%", height: "auto" }} />
           <div className="footer-content">
             <p style={{ marginBottom: ".1px", fontSize: "18px" }}>
-              Address: Pittsburgh Closets & Doors
+              Address: Pittsburgh Doors & Closets
             </p>
             <p style={{ marginBottom: "10px", fontSize: "18px" }}>
               1916 Babcock Blvd., Pittsburgh, PA 15209
