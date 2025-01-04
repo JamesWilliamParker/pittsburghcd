@@ -99,7 +99,7 @@ const NavBar = () => {
                 fontSize: "1.2rem",
               }}
             >
-              Call (724) 201-6421
+              Call (412)-844-4772
             </NavbarText>
 
             {/* Free Consultion Button */}
